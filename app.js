@@ -155,6 +155,7 @@ const pageWallImages = [
   ["我买到的-待支付订单详情页.png", "待支付订单"], ["订单页购买保险.png", "订单保险"], ["订单取消争议.jpg", "订单取消争议"],
   ["游客打分.png", "游客打分"], ["只有订单余额提现.png", "余额提现"]
 ];
+const pageWallDimensions = {"首页设计.png": {"width": 1290, "height": 3390}, "搭子.png": {"width": 1125, "height": 2985}, "瞬间.png": {"width": 1125, "height": 2439}, "聊天.png": {"width": 1125, "height": 2436}, "自己看主页.png": {"width": 1125, "height": 2436}, "个人资料——普通用户.png": {"width": 1245, "height": 2689}, "发布合并 .png": {"width": 1125, "height": 2433}, "福利中心.png": {"width": 1125, "height": 2670}, "服务详情页面.png": {"width": 1125, "height": 3477}, "服务详情页操作板块.png": {"width": 1125, "height": 3096}, "选择服务弹窗.jpg": {"width": 1125, "height": 2235}, "特色体验认证.png": {"width": 1125, "height": 4506}, "特色活动详情.png": {"width": 1125, "height": 4776}, "特色活动申请.png": {"width": 1125, "height": 2397}, "特色活动下单.png": {"width": 1125, "height": 2280}, "我买到的.png": {"width": 1125, "height": 3552}, "我买到的-待支付订单详情页.png": {"width": 1125, "height": 2715}, "订单页购买保险.png": {"width": 1125, "height": 2424}, "订单取消争议.jpg": {"width": 1125, "height": 2433}, "游客打分.png": {"width": 1125, "height": 2436}, "只有订单余额提现.png": {"width": 1125, "height": 2370}};
 const pageWall = document.querySelector(".page-wall-grid");
 if (pageWall) {
   const cards = [...pageWall.querySelectorAll("[data-wall-card]")];
@@ -170,7 +171,12 @@ if (pageWall) {
     }
     const block = card.querySelector(".page-wall-block");
     const image = document.createElement("img");
-    image.src = `./assets/page-wall/${file}`;
+    const dimensions = pageWallDimensions[file];
+    image.width = dimensions.width;
+    image.height = dimensions.height;
+    image.loading = "lazy";
+    image.decoding = "async";
+    image.src = `./assets/page-wall/thumbs/${file.replace(/\.[^.]+$/, ".webp")}`;
     image.alt = `游鸭手机端页面：${label}`;
     block.replaceChildren(image);
     card.querySelector("figcaption strong").textContent = label;
@@ -188,13 +194,13 @@ if (pageWall) {
     pageWall.replaceChildren(...columns);
     cards.forEach((card) => {
       const image = card.querySelector("img");
-      const ratio = image?.naturalWidth && image?.naturalHeight ? image.naturalHeight / image.naturalWidth : 2.2;
+      const ratio = image?.width && image?.height ? image.height / image.width : 2.2;
       const columnIndex = heights.indexOf(Math.min(...heights));
       columns[columnIndex].appendChild(card);
       heights[columnIndex] += ratio;
     });
   };
-  pageWall.querySelectorAll("img").forEach((image) => image.addEventListener("load", balancePageWall, { once: true }));
+
   balancePageWall();
   let balanceTimer;
   window.addEventListener("resize", () => {
