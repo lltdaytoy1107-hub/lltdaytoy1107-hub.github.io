@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>考拉快跑｜李璐廷作品集</title>
+  <link rel="stylesheet" crossorigin href="./assets/koala-C4FEs9x5.css">
+  <link rel="stylesheet" crossorigin href="./assets/ai-matching-prd-CJrVJjf-.css">
+</head>
+<body class="koala-static-page">
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="topbar koala-topbar">
+    <a class="case-back-link" href="./archive.html" aria-label="返回作品列表">←</a>
+    <div class="youya-nav-cluster">
+    <span class="youya-case-name">考拉快跑</span>
+    <div class="youya-nav-viewport" data-koala-nav-viewport>
+    <nav class="youya-case-directory" aria-label="考拉快跑案例目录">
+      <a href="#intro"><span>01</span>项目介绍</a><a href="#overview"><span>02</span>页面总览</a><a href="#problems"><span>03</span>产品痛点</a><a href="#goals"><span>04</span>设计目标</a><a href="#project"><span>05</span>项目概况</a><a href="#home"><span>06</span>首页</a><a href="#exercise"><span>07</span>运动</a><a href="#booking"><span>08</span>预约</a><a href="#discover"><span>09</span>发现</a><a href="#profile"><span>10</span>个人页</a>
+    </nav></div></div>
+  </header>
+  <main id="main">
+    <section id="intro" aria-label="项目介绍"><img src="./assets/10-gjeC_Eet.png" width="1920" height="1080" alt="考拉快跑：女性共享健身仓 APP 项目介绍" /></section>
+    <section id="overview" aria-label="页面总览"><img src="./assets/11-C9MnsDJi.png" width="1920" height="3417" alt="考拉快跑页面总览" /></section>
+    <section id="problems" aria-label="产品痛点"><img src="./assets/12-1JMyRqW6.png" width="1920" height="1080" alt="市面上的产品痛点" /></section>
+    <section id="goals" aria-label="设计目标"><img src="./assets/13-Db7KJZpJ.png" width="1920" height="1260" alt="用户问题总结及设计目标" /></section>
+    <section id="project" aria-label="项目概况"><img src="./assets/14-B2VM9Ins.png" width="1920" height="5507" alt="人群定位、项目选址、产品定位、用户体验、项目模式与产品理念" /></section>
+    <section id="home" aria-label="首页展示"><img src="./assets/15-vlxpgNVq.png" width="1920" height="2862" alt="首页展示及活动设计" /></section>
+    <section id="exercise" aria-label="运动页展示"><img src="./assets/16-BXpEqPjT.png" width="1920" height="3045" alt="运动选择、运动中、运动结束及体质检测界面" /></section>
+    <section id="booking" aria-label="预约页展示"><img src="./assets/17-DwQV-DPu.png" width="1920" height="3046" alt="运动预约、地点选择、舱内人数、预约提示与扫码入舱" /></section>
+    <section id="discover" aria-label="发现页展示"><img src="./assets/18-C9Loemj0.png" width="1920" height="3786" alt="圈子、好友推荐、商城与活动界面" /></section>
+    <section id="profile" aria-label="个人页展示"><img src="./assets/19-kbsCMZR0.png" width="1920" height="4617" alt="个人信息、运动数据、动态记录、会员权益与成长勋章" /></section>
+  </main>
+  <script>
+    (() => {
+      const viewport = document.querySelector('[data-koala-nav-viewport]');
+      const nav = viewport.querySelector('nav');
+      const links = [...nav.querySelectorAll('a')];
+      const sections = links.map(link => document.querySelector(link.hash));
+      let active = links.find(link => link.hash === location.hash) || links[0];
+      let frame = 0;
+      const sync = () => {
+        // Focus can scroll an overflow:hidden container; the transform owns
+        // positioning, so clear native scrolling before calculating offsets.
+        viewport.scrollLeft = 0;
+        nav.scrollLeft = 0;
+        links.forEach(link => {
+          link.setAttribute('aria-current', link === active ? 'location' : 'false');
+          const scale = link === active ? 1.28 : link.matches(':hover, :focus-visible') ? 1.05 : 1;
+          link.style.setProperty('--nav-space-right', `${link.offsetWidth * (scale - 1)}px`);
+        });
+        const maxShift = Math.max(0, nav.offsetWidth - viewport.clientWidth);
+        const center = active.offsetLeft + active.offsetWidth * 1.28 / 2;
+        const shift = maxShift <= 1 ? 0 : Math.max(-maxShift, Math.min(0, viewport.clientWidth / 2 - center));
+        nav.style.setProperty('--nav-shift', `${shift}px`);
+        const left = shift < -1;
+        const right = shift > -maxShift + 1;
+        const start = left ? 'transparent 0%, rgba(0,0,0,.5) 3%, #000 10%' : '#000 0%';
+        const end = right ? '#000 90%, rgba(0,0,0,.5) 97%, transparent 100%' : '#000 100%';
+        viewport.style.setProperty('--koala-nav-mask', maxShift <= 1 ? 'none' : `linear-gradient(90deg, ${start}, ${end})`);
+        viewport.classList.toggle('has-left-overflow', left);
+        viewport.classList.toggle('has-right-overflow', right);
+      };
+      const updateFromScroll = () => {
+        frame = 0;
+        document.body.classList.toggle('has-scrolled', scrollY > 8);
+        const section = sections.filter(section => section.getBoundingClientRect().top <= Math.max(90, innerHeight * .25)).at(-1) || sections[0];
+        active = links.find(link => link.hash === `#${section.id}`);
+        sync();
+      };
+      const alignAnchor = () => {
+        const link = links.find(link => link.hash === location.hash);
+        if (link) {
+          active = link;
+          document.querySelector(link.hash).scrollIntoView({behavior:'instant', block:'start'});
+        }
+        sync();
+      };
+      links.forEach(link => link.addEventListener('click', () => { active = link; sync(); }));
+      window.addEventListener('hashchange', alignAnchor);
+      window.addEventListener('load', alignAnchor, {once:true});
+      window.addEventListener('scroll', () => { if (!frame) frame = requestAnimationFrame(updateFromScroll); }, {passive:true});
+      window.addEventListener('resize', sync, {passive:true});
+      nav.addEventListener('pointermove', sync, {passive:true});
+      nav.addEventListener('pointerleave', sync, {passive:true});
+      nav.addEventListener('focusin', sync);
+      nav.addEventListener('focusout', () => requestAnimationFrame(sync));
+      sync();
+    })();
+  </script>
+</body>
+</html>

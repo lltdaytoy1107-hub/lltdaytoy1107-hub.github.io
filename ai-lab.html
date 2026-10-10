@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>AI Product Notes｜李璐廷</title>
+    <meta name="description" content="李璐廷 AI 产品学习与验收笔记框架，记录任务、边界、评测与失败路径。" />
+    <link rel="stylesheet" crossorigin href="./assets/ai-matching-prd-CJrVJjf-.css">
+  </head>
+  <body class="theme-zaowuyun">
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="返回首页"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M10.8 5.2 4 12l6.8 6.8M5 12h15" /></svg></span><span>LI LUTING / AI NOTES</span></a>
+      <div class="nav-actions"><a class="text-link" href="./index.html">返回作品集</a></div>
+    </header>
+
+    <main id="main">
+      <section class="shell notes-hero">
+        <p class="kicker">PRIVATE DRAFT / NOINDEX</p>
+        <h1>AI Product Notes</h1>
+        <p class="lede">用于沉淀 AI 产品判断与验收方法。当前为结构框架，不作为已上线项目或模型效果证明；内容达到可复现、可验收标准后再决定是否公开。</p>
+        <div class="notes-status">
+          <span>当前状态</span>
+          <strong>框架已建立，案例与任务样本待补</strong>
+        </div>
+      </section>
+
+      <section class="shell notes-framework" aria-labelledby="notes-framework-title">
+        <div class="section-head">
+          <p class="kicker">NOTE TEMPLATE</p>
+          <h2 id="notes-framework-title">每篇笔记必须回答六个问题</h2>
+        </div>
+        <ol class="notes-questions">
+          <li><span>01</span><div><strong>用户任务</strong><p>用户原本要完成什么判断或操作？不用 AI 的方案哪里不足？</p></div></li>
+          <li><span>02</span><div><strong>输入契约</strong><p>必填、选填、敏感字段分别是什么？信息不足时如何追问？</p></div></li>
+          <li><span>03</span><div><strong>输出契约</strong><p>结构、格式、引用、置信提示和用户可编辑范围如何定义？</p></div></li>
+          <li><span>04</span><div><strong>失败路径</strong><p>信息不足、冲突、高风险、模型或服务不可用时怎样恢复？</p></div></li>
+          <li><span>05</span><div><strong>验收任务集</strong><p>正常、边界、冲突、高风险样本分别如何判断通过或失败？</p></div></li>
+          <li><span>06</span><div><strong>人工接管</strong><p>何时追问、撤回、转人工或退回非 AI 流程？谁承担最终判断？</p></div></li>
+        </ol>
+      </section>
+
+      <section class="shell notes-backlog" aria-labelledby="notes-backlog-title">
+        <div class="section-head">
+          <p class="kicker">CONTENT BACKLOG</p>
+          <h2 id="notes-backlog-title">首批内容目录</h2>
+          <p>以下只是待完成选题，不代表已经产出或验证。</p>
+        </div>
+        <div class="notes-table" role="table" aria-label="AI Product Notes 内容计划">
+          <div class="notes-table-row head" role="row"><span role="columnheader">选题</span><span role="columnheader">核心问题</span><span role="columnheader">待补证据</span></div>
+          <div class="notes-table-row" role="row"><strong role="cell">AI 电商图生成</strong><span role="cell">商品一致性、可控编辑、版权与导出边界</span><span role="cell">输入输出样例、失败样本、原型</span></div>
+          <div class="notes-table-row" role="row"><strong role="cell">旅游服务推荐助手</strong><span role="cell">推荐理由、低置信提示与人工咨询兜底</span><span role="cell">任务集、推荐规则、异常场景</span></div>
+          <div class="notes-table-row" role="row"><strong role="cell">AI 产品验收清单</strong><span role="cell">如何从“能生成”走到“任务可完成”</span><span role="cell">评分口径、复测记录、版本对比</span></div>
+        </div>
+      </section>
+
+      <section class="shell notes-publish-gate">
+        <h2>公开门槛</h2>
+        <p>至少具备真实输入、真实输出、任务集、失败案例、改进记录、隐私与权限边界。缺少其中任一项时，页面继续保持 `noindex`，不进入主导航。</p>
+      </section>
+    </main>
+
+    <footer>© 2026 李璐廷 · AI Product Notes · 私有草稿</footer>
+  </body>
+</html>

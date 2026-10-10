@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=960, initial-scale=1.0" />
+    <link rel="preload" as="image" href="./assets/%E6%95%B0%E6%8D%AE%E7%9B%91%E7%9D%A3-anH7jdim.png" />
+    <title>游鸭 ZPJ｜李璐廷 AI 产品经理作品集</title>
+    <meta name="description" content="游鸭 ZPJ 旅游服务交易平台案例：信任建立、订单履约、纠纷流程、等级治理与早期 PC 后台。" />
+    <script>
+      (() => {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        const root = document.documentElement;
+        root.classList.add("design-analysis-preflight", "design-style-preflight", "service-order-preflight");
+        window.setTimeout(() => {
+          if (!root.classList.contains("design-analysis-motion")) root.classList.remove("design-analysis-preflight");
+          if (!root.classList.contains("design-style-motion")) root.classList.remove("design-style-preflight");
+          if (!root.classList.contains("service-motion-ready")) root.classList.remove("service-order-preflight");
+        }, 2500);
+      })();
+    </script>
+    <style>
+      html.design-analysis-preflight body.theme-youya [data-analysis-goal] {
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+      html.design-style-preflight body.theme-youya .design-style-content {
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+      html.service-order-preflight body.theme-youya [data-service-reveal] {
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+    </style>
+    <link rel="stylesheet" crossorigin href="./assets/case-nVpjIBZy.css">
+  </head>
+  <body class="theme-youya">
+    <a class="skip-link" href="#main">跳到正文</a>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="case-back-link" href="./index.html" aria-label="返回首页">‹</a>
+      <nav class="main-nav" aria-label="主导航">
+        <div class="youya-nav-cluster is-inline">
+          <a href="./case.html" aria-current="page" data-en="Youya" aria-label="游鸭首页"></a>
+          <div class="youya-nav-viewport" data-youya-nav-viewport>
+          <nav class="youya-case-directory" data-youya-case-directory aria-label="游鸭案例板块">
+            <a href="#role"><span>00</span>我的职责</a>
+            <a href="#brand-visual"><span>01</span>品牌视觉</a>
+            <a href="#page-wall"><span>02</span>页面总览</a>
+            <a href="#local-service-board"><span>03</span>本地人服务｜<strong>AI智能匹配</strong></a>
+            <a href="#levels"><span>04</span>等级系统</a>
+            <a href="#companion"><span>05</span>搭子</a>
+            <a href="#moments"><span>06</span>瞬间</a>
+            <a href="#messages"><span>07</span>消息</a>
+            <a href="#pc"><span>08</span>后台设计</a>
+            <a href="#ip-promo-title"><span>09</span>IP及宣传设计</a>
+            <a href="#popup-design"><span>10</span>弹窗设计</a>
+            <a href="#ai-visual-exploration"><span>11</span>AI辅助视觉探索</a>
+          </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="nav-actions">
+        <button class="menu-button" data-menu type="button" aria-label="打开菜单" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="case-hero youya-detail-hero">
+        <img class="youya-detail-background" src="./assets/youya-home-bg-BCXDAsXj.png" alt="" aria-hidden="true" />
+        <div class="shell case-hero-layout case-hero-layout-single">
+          <div class="case-hero-copy">
+            <img class="youya-detail-logo" src="./assets/youya-logo-square-xiHfOFPe.png" alt="游鸭 Logo" data-reveal />
+            <p class="kicker" data-reveal>CASE 01 / LIVE PRODUCT</p>
+            <p class="case-hero-status" data-reveal>真实业务 · 2024.08—至今</p>
+            <h1 data-reveal><span class="case-title-brand">本地人服务的交易平台</span></h1>
+            <div class="youya-detail-wordmark" data-reveal><img src="./assets/youya-wordmark-v2-BZekam_d.png" alt="Youya" /></div>
+            <div class="youya-detail-screen-wrap" data-reveal><img class="youya-detail-screen" src="./assets/youya-home-screen-v2-2TCx8pXB.png" alt="游鸭本地人服务交易平台首页界面" /></div>
+            <div class="youya-hero-popups" aria-label="游鸭首页弹窗预览">
+              <div class="youya-hero-popup youya-hero-popup-left" data-reveal><img src="./assets/youya-hero-reference-CXGh7-Rw.png" alt="游鸭首页左侧弹窗预览" /></div>
+              <div class="youya-hero-popup youya-hero-popup-right" data-reveal><img src="./assets/youya-hero-reference-CXGh7-Rw.png" alt="游鸭首页右侧弹窗预览" /></div>
+            </div>
+            <div class="youya-detail-menu" data-reveal><img src="./assets/youya-home-menu-v2-BsWgfGVo.png" alt="游鸭详情目录导航" /></div>
+            <div class="youya-detail-copy" data-reveal>
+              <h2>本地人服务的信任、交易与治理</h2>
+              <p>旅游服务交易平台案例，覆盖服务发现、交易履约与平台治理；具体职责与协作边界在下方展开。</p>
+            </div>
+          </div>
+        </div>
+        <div class="meta-grid case-hero-meta" data-reveal>
+          <div><span data-en="Role">角色定位</span><strong data-en="UI/UX design; product planning">UI/UX 设计；产品方案策划</strong></div>
+          <div><span data-en="Product question">产品问题</span><strong data-en="Make local services trustworthy and transactional">让本地人服务先可判断，再可交易</strong></div>
+          <div><span data-en="Live scope">已上线</span><strong data-en="Service publishing, orders, reviews, dispute flow">服务发布、订单、评价、纠纷流程</strong></div>
+          <div><span data-en="In development">研发中</span><strong data-en="Recording, alert, route sharing, level system">录音、报警、路线分享、等级体系</strong></div>
+        </div>
+      </section>
+
+      <section id="role" class="shell section role-overview" aria-labelledby="role-title">
+        <div class="role-overview-head" data-reveal>
+          <p class="kicker">00 / MY CONTRIBUTION</p>
+          <h2 id="role-title">从规则初版到最终界面交付</h2>
+          <p>团队无专职产品经理。我负责产品方案初版、核心流程与 UI/UX，并在研发、财务和运营评审后持续修订。</p>
+        </div>
+        <div class="role-scope-grid" aria-label="我的职责范围">
+          <article class="role-scope-card" data-reveal>
+            <span>01</span>
+            <h3>产品方案</h3>
+            <p>本地人服务、等级体系、取消订单与平台介入规则初版。</p>
+          </article>
+          <article class="role-scope-card" data-reveal>
+            <span>02</span>
+            <h3>UI/UX</h3>
+            <p>用户端流程、服务者流程、订单与治理界面设计。</p>
+          </article>
+          <article class="role-scope-card" data-reveal>
+            <span>03</span>
+            <h3>协作与交付</h3>
+            <p>与研发、财务、运营评审，并根据反馈完成最终修订。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="youya-about-motion" id="about-youya" aria-labelledby="about-youya-title">
+        <div class="youya-about-stage">
+          <div class="youya-about-base" aria-label="关于游鸭页面首次出现">
+            <img class="youya-about-first" src="./assets/youya-about-first-ChU4MCId.png" alt="关于游鸭页面首次出现" />
+            <img class="youya-about-second" src="./assets/youya-about-second-D2j6AxOI.png" alt="关于游鸭页面第二次出现" data-reveal />
+          </div>
+          <div class="youya-about-tags" aria-label="关于游鸭页面标签">
+            <img src="./assets/youya-about-tag-1-CkFjFh4n.png" alt="关于游鸭标签 1" data-reveal />
+            <img src="./assets/youya-about-tag-2-dXfZ0eNd.png" alt="关于游鸭标签 2" data-reveal />
+            <img src="./assets/youya-about-tag-3-CWTaM6Sb.png" alt="关于游鸭标签 3" data-reveal />
+          </div>
+          <img class="youya-about-intro" src="./assets/youya-about-intro-ae6lYG7U.png" alt="关于游鸭项目介绍" data-reveal />
+        </div>
+      </section>
+
+      <section id="brand-visual" class="brand-visual" aria-label="品牌视觉">
+        <section class="design-analysis" aria-label="设计策略分析">
+          <div class="design-analysis-stage" data-design-analysis>
+            <img class="design-analysis-bg" src="./assets/%E8%AE%BE%E8%AE%A1%E7%AD%96%E7%95%A5%E8%83%8C%E6%99%AF-LoHtO1cF.png" alt="" aria-hidden="true" />
+            <div class="design-analysis-asset-group">
+            <img class="design-analysis-title" src="./assets/%E8%AE%BE%E8%AE%A1%E7%AD%96%E7%95%A5%E5%88%86%E6%9E%90%E6%A0%87%E9%A2%98-BGcZrHsS.png" alt="06 设计需求分析" />
+
+            <div class="design-analysis-layer design-analysis-inputs" aria-label="分析：业务诉求、行业现状与用户痛点">
+              <img class="design-analysis-item input-1" data-analysis-input="1" src="./assets/1.1%E4%B8%9A%E5%8A%A1%E8%AF%89%E6%B1%82-D6p5OtCX.png" alt="业务诉求：搭建可信的交易平台、保障服务质量与安全、提升匹配与服务效率" />
+              <img class="design-analysis-item input-2" data-analysis-input="2" src="./assets/1.2%E8%A1%8C%E4%B8%9A%E7%8E%B0%E7%8A%B6-azb10P_7.png" alt="行业现状：需求旺盛但供给无序、交易缺乏基础设施、面临合规风险" />
+              <img class="design-analysis-item input-3" data-analysis-input="3" src="./assets/1.3%E7%94%A8%E6%88%B7%E7%97%9B%E7%82%B9-S7IE_bd6.png" alt="用户痛点：信任与安全基础缺失、服务体验与结果不确定、纠纷产生后解决无门" />
+            </div>
+
+            <div class="design-analysis-layer design-analysis-branches" aria-hidden="true">
+              <img class="design-analysis-item branch-1" data-analysis-branch="1" src="./assets/2.1%E4%B8%9A%E5%8A%A1%E8%AF%89%E6%B1%82%E5%88%86%E6%94%AF-C4G9MIVm.png" alt="" />
+              <img class="design-analysis-item branch-2" data-analysis-branch="2" src="./assets/2.2%E8%A1%8C%E4%B8%9A%E7%8E%B0%E7%8A%B6%E5%88%86%E6%94%AF-CcpQfQyG.png" alt="" />
+              <img class="design-analysis-item branch-3" data-analysis-branch="3" src="./assets/2.3%E7%94%A8%E6%88%B7%E7%97%9B%E7%82%B9%E5%88%86%E6%94%AF-DCCLGhxd.png" alt="" />
+            </div>
+
+            <div class="design-analysis-item design-goal" data-analysis-goal role="img" aria-label="设计目标：功能层构建信任与效率系统，交互层简化流程与明确引导，情感层建立情感连接及品牌好感">
+              <img class="design-goal-slice design-goal-slice-1" src="./assets/3.%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87-CuidtUBp.png" alt="" aria-hidden="true" />
+              <img class="design-goal-slice design-goal-slice-2" src="./assets/3.%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87-CuidtUBp.png" alt="" aria-hidden="true" />
+              <img class="design-goal-slice design-goal-slice-3" src="./assets/3.%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87-CuidtUBp.png" alt="" aria-hidden="true" />
+            </div>
+            <img class="design-analysis-item design-transition" data-analysis-transition src="./assets/4.%E8%BF%87%E6%B8%A12-DXVRnYd1.png" alt="从设计目标推导到设计策略的连接关系" />
+            <img class="design-analysis-item design-strategy" data-analysis-strategy src="./assets/5.%E8%AE%BE%E8%AE%A1%E7%AD%96%E7%95%A5-uG9i_rNb.png" alt="设计策略：认证与标准化、流程可视化与容错引导、品牌文案与IP陪伴" />
+            </div>
+          </div>
+        </section>
+
+        <section class="design-style" data-design-style aria-label="设计风格分析">
+          <div class="design-style-stage design-style-stage-1" data-design-style-stage>
+            <img class="design-style-bg" src="./assets/%E8%83%8C%E6%99%AF1-BI5Hgk2_.png?v=629aaf8d" alt="" aria-hidden="true" />
+            <div class="design-style-asset-group">
+            <img class="design-style-title" src="./assets/%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC%E6%A0%87%E9%A2%98-CDpJR2pv.png" alt="设计风格分析" />
+            <img class="design-style-content design-style-content-1" src="./assets/1.%E7%B4%A0%E6%9D%90%E8%A7%84%E8%8C%83-DfUtfG84.png" alt="色彩规范：主色与辅助色规范" />
+            </div>
+          </div>
+          <div class="design-style-stage design-style-stage-2" data-design-style-stage>
+            <img class="design-style-bg" src="./assets/%E8%83%8C%E6%99%AF2-DK2-jLZF.png" alt="" aria-hidden="true" />
+            <div class="design-style-asset-group">
+            <img class="design-style-content design-style-content-2" src="./assets/2.%E5%AD%97%E4%BD%93%E8%A7%84%E8%8C%83-CTbC1uSH.png" alt="字体规范：常规与重点文字字体、字号和字重规范" />
+            </div>
+          </div>
+          <div class="design-style-stage design-style-stage-3" data-design-style-stage>
+            <img class="design-style-bg" src="./assets/%E8%83%8C%E6%99%AF3-VD7367H1.png" alt="" aria-hidden="true" />
+            <div class="design-style-asset-group">
+            <img class="design-style-content design-style-content-3" src="./assets/3.%E8%A7%84%E8%8C%83%E5%8C%96%E8%AE%BE%E8%AE%A1-Duuc9f41.png" alt="规范化设计：功能入口、图标与业务标签样式" />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="youya-page-wall" id="page-wall" aria-labelledby="page-wall-title">
+        <div class="shell page-wall-shell">
+          <div class="section-head page-wall-head" data-reveal>
+            <div>
+              <h2 id="page-wall-title">游鸭总览图</h2>
+            </div>
+          </div>
+
+          <div class="page-wall-groups">
+            <div class="page-wall-grid page-wall-grid-wide" data-reveal>
+                <figure class="page-wall-card page-wall-card-featured" data-wall-card tabindex="0"><div class="page-wall-block tone-lime ratio-tall"></div><figcaption><strong>服务首页</strong><span>代表页面 · 重点展示</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-violet ratio-tall"></div><figcaption><strong>内容发现</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-pink ratio-tall"></div><figcaption><strong>服务详情</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-olive ratio-tall"></div><figcaption><strong>个人主页</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-lilac ratio-square"></div><figcaption><strong>内容专题</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-yellow ratio-wide"></div><figcaption><strong>服务搜索</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card page-wall-card-featured" data-wall-card tabindex="0"><div class="page-wall-block tone-cyan ratio-wide"></div><figcaption><strong>订单流程</strong><span>代表页面 · 重点展示</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-sand ratio-wide"></div><figcaption><strong>消息沟通</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-blue ratio-wide"></div><figcaption><strong>服务完成</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-teal ratio-tall"></div><figcaption><strong>订单详情</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-sand ratio-square"></div><figcaption><strong>评价反馈</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card page-wall-card-featured" data-wall-card tabindex="0"><div class="page-wall-block tone-red ratio-wide"></div><figcaption><strong>平台介入</strong><span>代表页面 · 重点展示</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-moss ratio-wide"></div><figcaption><strong>取消规则</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-plum ratio-wide"></div><figcaption><strong>等级治理</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-olive ratio-tall"></div><figcaption><strong>举报处理</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-red ratio-square"></div><figcaption><strong>责任举证</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-orange ratio-square"></div><figcaption><strong>服务者工具</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-yellow ratio-square"></div><figcaption><strong>IP及宣传设计</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-lilac ratio-square"></div><figcaption><strong>活动运营</strong><span>页面预览</span></figcaption></figure>
+                <figure class="page-wall-card" data-wall-card tabindex="0"><div class="page-wall-block tone-violet ratio-tall"></div><figcaption><strong>服务管理</strong><span>页面预览</span></figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="youya-reference-showcase youya-reference-moments" id="moments" aria-labelledby="moments-title">
+          <div class="moments-canvas">
+            <img class="moments-background" src="./assets/%E7%9E%AC%E9%97%B4%E8%83%8C%E6%99%AF-m8Ow16JH.png" alt="" aria-hidden="true" />
+            <div class="moments-asset-group">
+          <header class="moments-heading detail-page-heading detail-page-heading-light" data-reveal>
+            <div class="detail-page-heading-main"><p>04 / MOMENTS · UI/UX DESIGN</p><h2 id="moments-title"><strong>瞬间</strong>设计</h2></div>
+            <div class="reference-page-tags" aria-label="页面类型"><img src="./assets/uiux%E8%AE%BE%E8%AE%A1-DWn5Ejrk.png" alt="游鸭app端UI/UX设计" /></div>
+          </header>
+          <p class="moments-lead detail-page-lead detail-page-lead-light" data-reveal>● 瞬间不仅能帮助用户在不同地方记录自己的精彩时刻，还是一个自由交友、互动、了解最新动态的渠道。</p>
+          <div class="moments-group-1" aria-label="瞬间内容发现与互动路径">
+            <img class="moments-asset moments-1-1" data-reveal src="./assets/1.1%E7%9E%AC%E9%97%B4%E9%A1%B5%E9%9D%A2-wh8w3Tcl.png" alt="瞬间页面，展示附近瞬间内容流" />
+            <div class="moments-group-1-notes" aria-label="图1.1说明">
+              <img class="moments-asset moments-2-1" data-reveal src="./assets/2.1%E5%8F%91%E7%8E%B0%E7%9E%AC%E9%97%B4-D8fiPM81.png" alt="发现瞬间" />
+              <img class="moments-asset moments-2-2" data-reveal src="./assets/2.2%E9%99%84%E8%BF%91%E7%9E%AC%E9%97%B4-ITZG4KA4.png" alt="附近瞬间" />
+              <img class="moments-asset moments-2-3" data-reveal src="./assets/2.3%E9%99%84%E8%BF%91%E7%9E%AC%E9%97%B4-Bpe-XU7S.png" alt="瞬间图片" />
+            </div>
+          </div>
+          <div class="moments-group-2" aria-label="瞬间详情与服务关联路径">
+            <img class="moments-detail" data-reveal src="./assets/3.1%E7%9E%AC%E9%97%B4%E8%AF%A6%E6%83%85-Q-JZlGRQ.png" alt="瞬间详情页面与评论互动" />
+            <div class="moments-group-2-notes" aria-label="图3.1说明">
+              <img class="moments-asset moments-1-2" data-reveal src="./assets/1.2%E4%BB%8E%E5%86%85%E5%AE%B9%E8%BF%9B%E5%85%A5%E6%9C%8D%E5%8A%A1-CpACxZSJ.png" alt="从内容进入服务" />
+              <img class="moments-asset moments-1-3" data-reveal src="./assets/1.3%E7%9E%AC%E9%97%B4%E8%AF%A6%E6%83%85-BzRxq4Y6.png" alt="瞬间详情" />
+              <img class="moments-asset moments-1-4" data-reveal src="./assets/1.4%E5%85%B3%E8%81%94%E6%9C%8D%E5%8A%A1-E9qoXJrQ.png" alt="关联服务" />
+              <img class="moments-asset moments-1-5" data-reveal src="./assets/1.5%E7%9E%AC%E9%97%B4%E8%AF%84%E8%AE%BA-9bspipEU.png" alt="瞬间评论" />
+            </div>
+          </div>
+            <img class="moments-bottom-gradient" src="./assets/%E5%BA%95%E9%83%A8%E6%B8%90%E5%8F%98-DnSD3Q6s.png" alt="" aria-hidden="true" />
+            </div>
+          </div>
+      </section>
+
+        <section class="youya-reference-showcase youya-reference-companion" id="companion" aria-labelledby="companion-title">
+          <div class="companion-canvas">
+            <img class="companion-bg" src="./assets/%E6%90%AD%E5%AD%90%E8%83%8C%E6%99%AF-CYWBk0VP.png" alt="" aria-hidden="true" />
+            <div class="companion-asset-group">
+          <header class="detail-page-heading companion-detail-heading" data-reveal>
+            <div class="detail-page-heading-main"><p>COMPANION MATCHING / UI·UX DESIGN</p><h2 id="companion-title"><strong>搭子匹配页面</strong>设计</h2></div>
+            <div class="reference-page-tags" aria-label="页面类型"><img src="./assets/%E6%B4%BB%E5%8A%A8%E8%A7%84%E5%88%99%E5%88%B6%E5%AE%9A-_9r5E5BK.png?v=94ef0ebf" alt="旅游服务平台活动/规则制定" /><img src="./assets/uiux%E8%AE%BE%E8%AE%A1-DWn5Ejrk.png?v=e39de862" alt="游鸭app端UI/UX设计" /></div>
+          </header>
+          <p class="detail-page-lead companion-detail-lead" data-reveal>● 快速找到专属于你的合拍伙伴。无论是游玩、聚会还是日常陪伴，这里都能精准匹配。</p>
+          <img class="companion-asset companion-match-title" data-reveal src="./assets/%E5%8C%B9%E9%85%8D%E6%9D%A1%E4%BB%B6%E5%B7%A61-QEbq_4SH.png" alt="01 匹配条件：通过数据筛选，快速锁定最可能玩到一起的伙伴" />
+          <img class="companion-asset companion-match-options" data-reveal src="./assets/%E6%90%AD%E5%AD%90%E9%80%89%E9%A1%B9%E5%B7%A62-BTXdkuv2.png" alt="旅行搭子偏好筛选选项" />
+          <img class="companion-asset companion-home-screen" data-reveal src="./assets/%E6%90%AD%E5%AD%90%E9%A6%96%E9%A1%B5%E4%B8%AD-DxD1NPAg.png" alt="搭子首页匹配结果" />
+          <img class="companion-asset companion-activity-title" data-reveal src="./assets/%E6%B4%BB%E5%8A%A8%E5%88%A4%E6%96%AD%E5%8F%B31-B4G_2C0y.png" alt="02 活动判断：帮助用户判断是否加入活动" />
+          <img class="companion-asset companion-activity-detail" data-reveal src="./assets/%E6%90%AD%E5%AD%90%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E5%8F%B32-leePlirD.png" alt="搭子活动详情界面" />
+          <img class="companion-asset companion-chat-title" data-reveal src="./assets/%E6%90%AD%E5%AD%90%E7%BE%A4%E8%81%8A-CLT8_je8.png" alt="03 团队协作—搭子群聊" />
+            <img class="companion-asset companion-chat-image" data-reveal src="./assets/%E6%90%AD%E5%AD%90%E7%BE%A4%E8%81%8A%E5%9B%BE%E7%89%87-CghE_stw.png" alt="搭子群聊、群聊设置与活动群聊消息" />
+            </div>
+          </div>
+      </section>
+
+      <section class="messages-benefits-showcase" id="messages" aria-labelledby="messages-title">
+        <img class="messages-benefits-background" src="./assets/%E6%B6%88%E6%81%AF%E4%B8%8E%E7%A6%8F%E5%88%A9%E9%A1%B5%E8%83%8C%E6%99%AF-DZ1T2pVv.png" alt="" aria-hidden="true" />
+        <div class="messages-benefits-canvas">
+          <header class="detail-page-heading messages-benefits-heading" data-reveal>
+            <div class="detail-page-heading-main"><p>MESSAGES &amp; BENEFITS / PRODUCT SYSTEM</p><h2 id="messages-title"><strong>消息与福利页面</strong>设计</h2></div>
+            <div class="reference-page-tags" aria-label="页面类型"><img src="./assets/youya-about-tag-2-dXfZ0eNd.png" alt="旅游服务平台活动/规则制定" /><img src="./assets/youya-about-tag-1-CkFjFh4n.png" alt="游鸭app端UI/UX设计" /></div>
+          </header>
+          <p class="detail-page-lead messages-benefits-lead" data-reveal>● 在消息页面中，仅本地人可见“福利”板块。本地人可通过完成任务获取“服务加热卡”，对某服务使用加热卡后，该服务将在本地人服务列表中排至前排。</p>
+
+          <img class="messages-benefits-flow" data-reveal src="./assets/1.%E6%B5%81%E7%A8%8B-9jFznUz3.png" alt="福利入口、完成任务、获得加热卡、服务前排曝光流程" />
+
+          <div class="messages-benefits-upper">
+            <div class="messages-benefits-pack messages-benefits-pack-a">
+              <div class="messages-benefits-copy-stack">
+                <img data-reveal src="./assets/2.1%E7%A6%8F%E5%88%A9%E5%85%A5%E5%8F%A3-DDX2lzEM.png" alt="福利入口说明" />
+                <img data-reveal src="./assets/2.2%E4%BA%92%E5%8A%A8%E7%B3%BB%E7%BB%9F%E6%B6%88%E6%81%AF-C7oxD68y.png" alt="互动与系统消息说明" />
+              </div>
+              <img class="messages-benefits-message-screen" data-reveal src="./assets/3.%E6%B6%88%E6%81%AF%E9%A1%B5%E9%9D%A2-CJt-8DTA.png" alt="消息页面" />
+            </div>
+            <div class="messages-benefits-pack messages-benefits-pack-b">
+              <img class="messages-benefits-chat-screen" data-reveal src="./assets/4.%E8%81%8A%E5%A4%A9%E9%A1%B5%E9%9D%A2-BL5n_VDD.png" alt="聊天页面" />
+              <img class="messages-benefits-reward-copy" data-reveal src="./assets/5.%E6%B2%9F%E9%80%9A%E6%80%81%E5%BA%A6%E5%A5%96%E5%8A%B1-CoxqpSts.png" alt="沟通态度奖励说明" />
+            </div>
+          </div>
+
+          <div class="messages-benefits-lower">
+            <img class="messages-benefits-cycle-title" data-reveal src="./assets/6.%E4%BB%8E%E8%8E%B7%E5%BE%97-%E4%BD%BF%E7%94%A8-%E5%8F%8D%E9%A6%88%20%E5%BD%A2%E6%88%90%E6%AD%A3%E5%90%91%E5%A2%9E%E9%95%BF%E9%97%AD%E7%8E%AF-BSxVgyns.png" alt="从获得、使用、反馈形成正向增长闭环" />
+            <img class="messages-benefits-detail-group" data-reveal src="./assets/7.%E7%A6%8F%E5%88%A9%E8%AF%A6%E6%83%85%E5%9B%BE%E7%BB%84-CoOwj3EL.png?v=51f4b9ad" alt="福利任务与签到、服务加热与有效期、服务曝光效果" />
+          </div>
+        </div>
+        <img class="messages-benefits-impact" data-reveal src="./assets/8.%E8%AE%BE%E7%BD%AE%E4%BD%9C%E7%94%A8-CDsqs_UW.png" alt="任务激励、曝光权益与互动回流" />
+      </section>
+
+      <section class="profile-showcase" id="profile" aria-labelledby="profile-title">
+        <div class="profile-canvas">
+            <img class="profile-background" src="./assets/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E8%83%8C%E6%99%AF-CUXbLAT2.png" alt="" aria-hidden="true" />
+            <div class="profile-asset-group">
+          <header class="detail-page-heading profile-detail-heading" data-reveal>
+            <div class="detail-page-heading-main"><p>PROFILE / UI·UX DESIGN</p><h2 id="profile-title"><strong>个人主页</strong>设计</h2></div>
+            <div class="reference-page-tags" aria-label="页面类型"><img src="./assets/uiux%E8%AE%BE%E8%AE%A1-DWn5Ejrk.png?v=e39de862" alt="游鸭app端UI/UX设计" /></div>
+          </header>
+          <p class="detail-page-lead profile-detail-lead" data-reveal>● 通过个人内容、客服问答与学习资料，帮助用户展示服务、解决使用问题并理解平台规则。</p>
+          <img class="profile-pages" data-reveal src="./assets/%E9%A1%B5%E9%9D%A21-BzrTEieW.png" alt="个人主页、客服及消息问答、游鸭学习资料三组页面" />
+            <img class="profile-annotations" data-reveal src="./assets/%E6%B3%A8%E9%87%8A2-BIggdKZj.png" alt="个人主页展示个人内容和服务，客服及消息问答解决使用问题，游鸭学习资料承载规则和服务知识" />
+            </div>
+          </div>
+      </section>
+
+      <section class="local-service-showcase" id="local-service-board" aria-labelledby="local-service-board-title">
+        <img class="local-service-background-image" src="./assets/local-service-board-bg-small-v2-vq3CysRf.png" alt="" aria-hidden="true" />
+        <div class="local-service-canvas">
+          <header class="detail-page-heading" data-reveal>
+            <div class="detail-page-heading-main"><p>LOCAL SERVICE / UI·UX DESIGN</p><h2 id="local-service-board-title"><strong>本地人服务</strong>设计</h2></div>
+            <div class="reference-page-tags" aria-label="页面类型"><img src="./assets/youya-about-tag-1-CkFjFh4n.png" alt="游鸭app端UI/UX设计" /></div>
+          </header>
+          <p class="detail-page-lead" data-reveal>● 通过布局与命名优化，帮助用户在寻找本地服务时目的更明确、筛选更精准、体验更吸引。</p>
+
+          <div class="local-service-discovery" aria-labelledby="local-discovery-title">
+            <div class="local-service-discovery-copy">
+              <p class="local-service-kicker" id="local-discovery-title">01 / SERVICE DISCOVERY</p>
+              <div class="local-service-callout local-service-callout-category" data-reveal><img src="./assets/local-service-category-Bx7ZMUNU.png" alt="本地人服务分类界面" /></div>
+              <div class="local-service-callout local-service-callout-core" data-reveal><img src="./assets/local-service-core-services-DfK1SLFw.png" alt="本地人服务两大核心服务界面" /></div>
+            </div>
+            <figure class="local-phone" data-reveal><img src="./assets/local-service-home-center-CySHHU-O.png" alt="游鸭本地人服务首页完整界面" /></figure>
+            <div class="local-service-discovery-copy local-service-discovery-copy-right">
+              <div class="local-service-callout local-service-callout-hot" data-reveal><img src="./assets/local-service-hot-recommendation-HzLWF6zN.png" alt="推荐与加热提示界面" /></div>
+              <div class="local-service-callout local-service-callout-feed" data-reveal><img src="./assets/local-service-feed-publish-DIVuHcPy.png" alt="信息流与快捷发布界面" /></div>
+            </div>
+          </div>
+          <section class="local-service-onboarding" aria-labelledby="local-onboarding-title">
+            <div class="local-service-onboarding-head" data-reveal>
+              <p class="local-service-kicker">02 / PROVIDER ONBOARDING</p>
+              <h3 id="local-onboarding-title">本地人入驻与特色体验审核</h3>
+              <p>方案展示了年龄与性别、实名认证、人脸核验及违规／举报状态等信息位，用于支持本地人身份与接单资格的识别。</p>
+            </div>
+            <ol class="local-service-onboarding-index" aria-label="审核流程三个阶段">
+              <li data-reveal><span>01</span><strong>本地人入驻</strong></li>
+              <li data-reveal><span>02</span><strong>完善资料与提交</strong></li>
+              <li data-reveal><span>03</span><strong>发布服务与设置佣金</strong></li>
+            </ol>
+            <img class="local-service-onboarding-review" src="./assets/local-service-onboarding-review-CI7iyPmB.png" alt="本地人入驻、资料审核与服务发布流程总览" />
+          </section>
+        </div>
+      </section>
+
+      <section class="local-service-2-showcase" id="local-service-design-2" aria-labelledby="local-service-2-title">
+        <img class="local-service-2-background" src="./assets/%E6%9C%AC%E5%9C%B0%E4%BA%BA%E6%9C%8D%E5%8A%A12%E8%83%8C%E6%99%AF%E6%9D%BF-DnlYzYsm.png" alt="" aria-hidden="true" />
+        <div class="local-service-2-canvas">
+          <header class="detail-page-heading" data-reveal>
+            <div class="detail-page-heading-main"><p>LOCAL SERVICE / DECISION &amp; TRANSACTION</p><h2 id="local-service-2-title"><strong>本地人服务</strong>设计 2</h2></div>
+            <div class="reference-page-tags" aria-label="页面类型"><img src="./assets/youya-about-tag-1-CkFjFh4n.png" alt="游鸭app端UI/UX设计" /></div>
+          </header>
+          <p class="detail-page-lead" data-reveal>● 详情页具体展示了服务的各项信息。确认符合自己的需求后，可支付订金锁单；若有更多疑问，也可以先与本地人沟通。</p>
+
+          <div class="local-service-2-stage local-service-2-stage-discovery">
+            <figure class="local-service-2-phone local-service-2-detail" data-reveal>
+              <img src="./assets/1.%E6%9C%8D%E5%8A%A1%E8%AF%A6%E6%83%85%E9%A1%B5-DNlQnFZY.png" alt="本地人服务详情页，展示服务者、价格、服务说明与用户评价" />
+            </figure>
+            <div class="local-service-2-right-column">
+              <div class="local-service-2-step" data-reveal><img src="./assets/1-1%E6%A0%87%E9%A2%98%E5%88%A4%E6%96%AD%E6%9C%8D%E5%8A%A1%E6%98%AF%E5%90%A6%E5%90%88%E9%80%82-DUDtVIMb.png" alt="01 判断服务是否合适" /></div>
+              <div class="local-service-2-card-stack">
+                <img data-reveal src="./assets/1-2%E6%9C%8D%E5%8A%A1%E8%80%85%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BF%A1-CIjgpfEE.png" alt="服务者是否可信" />
+                <img data-reveal src="./assets/1-3%E4%BB%B7%E6%A0%BC%E6%98%AF%E5%90%A6%E9%80%8F%E6%98%8E-CKJcR4vD.png" alt="价格是否透明" />
+                <img data-reveal src="./assets/1-4%E6%9C%8D%E5%8A%A1%E6%98%AF%E5%90%A6%E5%8C%B9%E9%85%8D-C4xYpG-K.png" alt="服务是否匹配" />
+              </div>
+              <div class="local-service-2-chat-block">
+                <div class="local-service-2-step" data-reveal><img src="./assets/2-1%E6%A0%87%E9%A2%98%E5%92%A8%E8%AF%A2%E5%B9%B6%E7%A1%AE%E8%AE%A4-Df8DNjLb.png" alt="02 咨询并确认" /></div>
+                <img class="local-service-2-chat" data-reveal src="./assets/2.%E8%81%8A%E5%A4%A9%E9%A1%B5%E9%9D%A2-DlzhlWBT.png" alt="本地人与游客咨询服务的聊天页面" />
+              </div>
+            </div>
+          </div>
+
+          <div class="local-service-2-stage local-service-2-stage-order">
+            <figure class="local-service-2-order-detail" data-reveal>
+              <img src="./assets/3.%E4%B8%8B%E5%8D%95%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-oxJ_rzdw.png" alt="选择服务与立即付款的下单详情页面" />
+            </figure>
+            <div class="local-service-2-order-right">
+              <div class="local-service-2-step" data-reveal><img src="./assets/3.%E6%A0%87%E9%A2%98%E9%80%89%E6%8B%A9%E5%B9%B6%E4%B8%8B%E5%8D%95-BjwN10uq.png" alt="03 选择并下单" /></div>
+              <div class="local-service-2-card-stack local-service-2-order-cards">
+                <img data-reveal src="./assets/3-1%E9%80%89%E6%8B%A9%E6%9C%8D%E5%8A%A1%E5%86%85%E5%AE%B9-BhCmsQr_.png" alt="选择服务内容" />
+                <img data-reveal src="./assets/3-2%E6%95%B0%E9%87%8F%E4%BB%B7%E6%A0%BC-DTRfZDGt.png" alt="数量与价格" />
+                <img data-reveal src="./assets/3-3%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8F-CxWfHFPJ.png" alt="支付方式" />
+                <img data-reveal src="./assets/3-4%E7%AB%8B%E5%8D%B3%E4%BB%98%E6%AC%BE--ELY3cbR.png" alt="立即付款" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ai-feature-case vietnam-localization-intro-showcase" id="vietnam-localization-intro" aria-labelledby="vietnam-localization-intro-title">
+        <div class="ai-feature-case-inner">
+          <header class="ai-feature-case-heading" data-reveal>
+            <p class="detail-page-heading-kicker">LOCALIZATION / PRODUCT STRATEGY</p>
+            <h2 id="vietnam-localization-intro-title"><strong>越南版本</strong>本地化策略</h2>
+            <p>先复用国内版本的产品骨架，再补齐越南市场的供给边界、机构审核与语言适配规则。</p>
+          </header>
+          <div class="ai-feature-case-grid" aria-label="越南版本本地化适配总结">
+            <article data-reveal>
+              <span>01 / PRODUCT DECISION</span>
+              <h3>先复用骨架，再补齐越南市场的关键边界</h3>
+              <p>不重做完整用户旅程，优先明确服务类型、发布主体与机构审核责任。</p>
+            </article>
+            <article data-reveal>
+              <span>02 / OPERATING MODEL</span>
+              <h3>让机构成为供给审核与履约的责任主体</h3>
+              <p>旅行团、特色体验由机构发布；本地人可提交地陪服务，但不能绕过审核上线。</p>
+            </article>
+            <article data-reveal>
+              <span>03 / LOCALIZATION RULE</span>
+              <h3>用两倍文本容量承接越南语真实内容</h3>
+              <p>优先增加容器高度、自然换行和信息层级，不用缩小字号或隐藏交易信息解决溢出。</p>
+            </article>
+          </div>
+          <div class="ai-feature-case-footer" data-reveal>
+            <p><strong>当前交付边界：</strong>本板块用于说明越南版本的产品适配判断与本地化规则；具体页面证据见下方两张内容页面。</p>
+            <a class="button secondary" href="./vietnam-prd.html">查看 MVP PRD ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="vietnam-localization-showcase" id="vietnam-localization" aria-labelledby="vietnam-localization-title">
+        <img class="vietnam-localization-background" src="./assets/background-B15P_XDH.png" alt="" aria-hidden="true" />
+        <div class="vietnam-localization-canvas">
+          <header class="detail-page-heading vietnam-localization-heading" data-reveal>
+            <div class="detail-page-heading-main">
+              <p>LOCALIZATION / PRODUCT STRATEGY</p>
+              <h2 id="vietnam-localization-title"><strong>越南版本</strong>本地化适配</h2>
+            </div>
+            <div class="reference-page-tags" aria-label="页面类型">
+              <img src="./assets/%E6%B4%BB%E5%8A%A8%E8%A7%84%E5%88%99%E5%88%B6%E5%AE%9A-_9r5E5BK.png" alt="旅游服务平台活动/规则制定" />
+              <img src="./assets/uiux%E8%AE%BE%E8%AE%A1-DWn5Ejrk.png" alt="游鸭app端UI/UX设计" />
+            </div>
+          </header>
+          <p class="detail-page-lead vietnam-localization-lead" data-reveal>● 基于既有中文 App 的产品骨架，围绕越南语长文本、本地特色活动、机构审核与账号入口完成适配。</p>
+
+          <div class="vietnam-localization-asset vietnam-localization-core" data-reveal>
+            <img src="./assets/core-conclusion-BEw5IHeB.png" alt="越南版本本地化策略核心结论：复用产品骨架、控制适配成本，以两倍文本容量应对越南语并由机构审核建立供给边界" />
+          </div>
+          <div class="vietnam-localization-asset vietnam-localization-path" data-reveal>
+            <img src="./assets/strategy-path-DjlDnycV.png" alt="越南版本本地化策略路径：供给侧机构与服务者经过复用、适配、约束、审核，连接到消费侧旅行者服务" />
+          </div>
+          <div class="vietnam-localization-asset vietnam-localization-focus" data-reveal>
+            <img src="./assets/design-focus-mZ4MJGeR.png" alt="越南版本本地化设计重点：保持一致、局部调整与重点新增" />
+          </div>
+          <div class="vietnam-localization-asset vietnam-localization-roles" data-reveal>
+            <img src="./assets/roles-boundary-CrZca-AB.png" alt="越南版本本地化三方角色与职责及当前边界" />
+          </div>
+
+        </div>
+      </section>
+
+      <section class="vietnam-localization-showcase vietnam-localization-page-2-showcase" id="vietnam-localization-page-2" aria-labelledby="vietnam-localization-page-2-title">
+        <img class="vietnam-localization-background" src="./assets/background-B15P_XDH.png" alt="" aria-hidden="true" />
+        <div class="vietnam-localization-canvas vietnam-localization-page-2-canvas">
+          <header class="detail-page-heading vietnam-localization-heading" data-reveal>
+            <div class="detail-page-heading-main">
+              <p>LOCALIZATION / PRODUCT STRATEGY · 02</p>
+              <h2 id="vietnam-localization-page-2-title"><strong>越南版本</strong>本地化页面</h2>
+            </div>
+            <div class="reference-page-tags" aria-label="页面类型">
+              <img src="./assets/%E6%B4%BB%E5%8A%A8%E8%A7%84%E5%88%99%E5%88%B6%E5%AE%9A-_9r5E5BK.png" alt="旅游服务平台活动/规则制定" />
+              <img src="./assets/uiux%E8%AE%BE%E8%AE%A1-DWn5Ejrk.png" alt="游鸭app端UI/UX设计" />
+            </div>
+          </header>
+          <p class="detail-page-lead vietnam-localization-lead" data-reveal>● 在复用交易骨架的基础上，补充越南版本的内容推荐、机构发布、旅行团详情、特色体验与账号入口。</p>
+          <div class="vietnam-localization-page-2" aria-label="越南版本本地化第二页面设计">
+            <div class="vietnam-localization-page-2-grid" aria-label="越南版本四类页面适配证据">
+              <figure class="vietnam-localization-page-2-item" data-reveal><img src="./assets/01-service-discovery-YAWqTDct.png" alt="01 服务发现：本地化内容推荐与服务浏览" /></figure>
+              <figure class="vietnam-localization-page-2-item" data-reveal><img src="./assets/02-institution-publish-D7l7uZIM.png" alt="02 机构发布：本地机构快速发布旅行团" /></figure>
+              <figure class="vietnam-localization-page-2-item" data-reveal><img src="./assets/03-trip-detail-BJ20CDyf.png" alt="03 旅行团详情：完整展示行程" /></figure>
+              <figure class="vietnam-localization-page-2-item" data-reveal><img src="./assets/04-experience-detail-B9REeWBq.png" alt="04 特色体验与地陪详情：特色服务与本地向导详情" /></figure>
+              <aside class="vietnam-localization-page-2-aside">
+                <div class="vietnam-localization-page-2-focus vietnam-localization-asset" data-reveal><img src="./assets/localization-focus-BUbrOoQz.png" alt="本地化适配重点：长文本布局、自然换行、业务字段与权限、账号入口" /></div>
+              </aside>
+            </div>
+            <div class="vietnam-localization-page-2-path vietnam-localization-asset" data-reveal><img src="./assets/strategy-path-mFtjFjXC.png" alt="复用现有交易骨架、适配越南语内容、新增机构与服务字段、补充本地账号入口" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ai-feature-case" id="local-service-ai-matching" aria-labelledby="local-service-ai-title">
+        <div class="ai-feature-case-inner">
+          <header class="ai-feature-case-heading" data-reveal>
+            <p class="detail-page-heading-kicker">LOCAL SERVICE / AI FEATURE</p>
+            <h2 id="local-service-ai-title"><strong>本地人服务</strong>设计｜<span>AI智能匹配</span></h2>
+            <p>在基础本地人服务之上，探索用 AI 帮助用户表达需求、理解条件并找到更合适的本地人服务；AI 负责理解与推荐，系统负责校验，用户保留确认权。</p>
+          </header>
+          <div class="ai-feature-case-grid">
+            <article data-reveal>
+              <span>01 / PROBLEM DEFINITION</span>
+              <h3>服务匹配不该只靠反复翻找</h3>
+              <p>用户要同时判断服务内容、价格、时间、地点与服务者可信度，需求表达和结果比较都容易产生负担。</p>
+            </article>
+            <article data-reveal>
+              <span>02 / PRODUCT LOGIC</span>
+              <h3>说清需求，确认理解，再看推荐</h3>
+              <p>AI 提取关键条件；用户确认或修改；系统展示匹配结果与推荐理由。</p>
+            </article>
+            <article data-reveal>
+              <span>03 / FAILURE PATHS</span>
+              <h3>不确定时，允许修正或转人工</h3>
+              <p>信息不足就补充，理解有歧义就确认，无完全匹配就调整需求、继续筛选或转人工。</p>
+            </article>
+          </div>
+          <div class="ai-feature-case-footer" data-reveal>
+            <p><strong>当前交付边界：</strong>本页为 AI 功能方案与可视化原型，重点展示问题定义、流程设计、失败兜底和用户确认机制，未将其表述为已上线能力。</p>
+            <a class="button secondary" href="./ai-matching-prd.html">查看详细说明 PRD ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-ai-detail" id="ai-matching-detail" aria-labelledby="ai-matching-detail-title">
+        <div class="case-ai-detail-canvas" aria-label="AI 智能匹配详细功能视觉说明">
+          <div class="case-ai-bottom-solid" aria-hidden="true"></div>
+          <div class="case-ai-foreground-group">
+            <div class="case-ai-side-fill case-ai-side-fill-left" aria-hidden="true"></div>
+            <div class="case-ai-side-fill case-ai-side-fill-right" aria-hidden="true"></div>
+            <div class="case-ai-asset-group">
+          <img class="case-ai-asset case-ai-asset-title" data-reveal src="./assets/Group%201321319501-DHP5FpoS.png" alt="AI智能匹配标题与说明" />
+          <img class="case-ai-asset case-ai-asset-rail" data-reveal src="./assets/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-DdQLLs3h.png" alt="AI匹配三步流程线" />
+          <img class="case-ai-asset case-ai-asset-copy" data-reveal src="./assets/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-CJBmNgH8.png" alt="输入、理解、匹配三章节说明" />
+          <img class="case-ai-asset case-ai-asset-screen case-ai-screen-1" data-reveal src="./assets/ai%E6%99%BA%E8%83%BD%E5%8C%B9%E9%85%8D-2-DjfcKZXR.png" alt="自然语言输入界面" />
+          <img class="case-ai-asset case-ai-asset-flow case-ai-flow-1" data-reveal src="./assets/Group%201321319580-C6K9dZzY.png" alt="自然语言输入后识别" />
+          <img class="case-ai-asset case-ai-asset-screen case-ai-screen-2" data-reveal src="./assets/Group%201321319578-C79Z-4_I.png" alt="AI识别结果与确认界面" />
+          <img class="case-ai-asset case-ai-asset-flow case-ai-flow-2" data-reveal src="./assets/Group%201321319571-CtdLp-SV.png" alt="即刻匹配，持续优化" />
+          <img class="case-ai-asset case-ai-supporting" data-reveal src="./assets/Group%201321319582-DqESWtU3.png" alt="本地人匹配结果界面与失败兜底路径" />
+            <img class="case-ai-asset case-ai-boundary" data-reveal src="./assets/Frame%201321319498-7SM-6Otb.png" alt="AI边界：不编造信息、不替用户下单、不跳过用户确认、保留人工决策" />
+            </div>
+          </div>
+          </div>
+      </section>
+
+      <section class="shell section story-layout story-layout-single">
+
+        <div class="story-content">
+          <section id="order" class="story-block order-story" data-reveal>
+            <div class="service-order-rebuild" aria-label="服务订单系统设计完整页面">
+              <div class="service-order-background service-order-background-one">
+                <img class="service-order-bg" src="./assets/%E6%9C%8D%E5%8A%A1%E8%AE%A2%E5%8D%95%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1-%E8%83%8C%E6%99%AF1-ByX20eNx.png" alt="" aria-hidden="true" />
+                <div class="service-order-asset-group service-order-asset-group-one">
+                <header class="detail-page-heading service-order-page-heading" data-service-reveal>
+                  <div class="detail-page-heading-main"><p>SERVICE ORDER / TRANSACTION SYSTEM</p><h2><strong>服务订单系统</strong>设计</h2></div>
+                  <div class="reference-page-tags" aria-label="页面类型">
+                    <img src="./assets/%E6%B4%BB%E5%8A%A8%E8%A7%84%E5%88%99%E5%88%B6%E5%AE%9A-_9r5E5BK.png" alt="旅游服务平台活动/规则制定" />
+                    <img src="./assets/uiux%E8%AE%BE%E8%AE%A1-DWn5Ejrk.png" alt="游鸭app端UI/UX设计" />
+                  </div>
+                </header>
+                <p class="detail-page-lead service-order-page-lead" data-service-reveal>● 为本地人服务搭建完整交易系统，覆盖发布、接单、完成、评价全流程，并同步支持订单页面与聊天页面状态栏的信息联动。</p>
+                <div class="service-order-top-group">
+                  <img class="service-order-flow" data-service-reveal src="./assets/1.1%E8%AE%A2%E5%8D%95%E6%B5%81%E7%A8%8B-DPPnKOQK.png" alt="服务订单流程状态线" />
+                  <img class="service-order-detail" data-service-reveal src="./assets/1.2%E8%AE%A2%E5%8D%95%E9%A1%B5%E9%9D%A2-YzvlrWo0.png" alt="服务订单页面流程组图" />
+                </div>
+                </div>
+              </div>
+              <div class="service-order-background service-order-background-two">
+                <img class="service-order-bg" src="./assets/%E6%9C%8D%E5%8A%A1%E8%AE%A2%E5%8D%95%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1-%E8%83%8C%E6%99%AF2-ibyHa_Tg.png" alt="" aria-hidden="true" />
+                <div class="service-order-asset-group service-order-asset-group-two">
+                <header class="service-order-message-heading" data-service-reveal>
+                  <h3>服务全流程通知信息</h3>
+                  <p>各流程提示弹窗、系统消息、进程通知</p>
+                </header>
+                <div class="service-order-overlay">
+                  <img class="service-order-main" data-service-reveal src="./assets/2.1%E6%9C%8D%E5%8A%A1%E4%B8%BB%E7%95%8C%E9%9D%A2-4QJQYUQL.png" alt="服务订单系统主界面" />
+                  <img class="service-order-pop service-order-pop-left-1" data-service-reveal src="./assets/2.2%E6%94%AF%E4%BB%98%E6%88%90%E5%8A%9F%E5%B7%A6%E4%B8%80-xxYX0RPl.png" alt="支付成功系统通知" />
+                  <img class="service-order-pop service-order-pop-right-1" data-service-reveal src="./assets/2.3%E5%B7%B2%E6%8E%A5%E5%8D%95%E5%8F%B3%E4%B8%80-Yt9E7wNk.png" alt="已接单系统通知" />
+                  <img class="service-order-pop service-order-pop-left-2" data-service-reveal src="./assets/2.4%E8%AF%B7%E6%B1%82%E4%BA%A4%E6%8D%A2%E5%BE%AE%E4%BF%A1%E5%B7%A6%E4%BA%8C-Bj0sv_9F.png" alt="请求交换微信提示" />
+                  <img class="service-order-pop service-order-pop-right-2" data-service-reveal src="./assets/2.5%E6%9C%AA%E4%BB%98%E5%B0%BE%E6%AC%BE%E6%8F%90%E7%A4%BA%E5%8F%B3%E4%BA%8C-BK_PFchW.png" alt="未付尾款提示" />
+                  <img class="service-order-pop service-order-pop-left-3" data-service-reveal src="./assets/2.6%E6%9C%8D%E5%8A%A1%E4%BF%A1%E6%81%AF%E5%B7%B2%E5%A1%AB%E5%86%99%E5%B7%A6%E4%B8%89-pvYRmZvo.png" alt="服务信息已填写提示" />
+                  <img class="service-order-pop service-order-pop-right-3" data-service-reveal src="./assets/2.7%E7%A1%AE%E8%AE%A4%E8%AE%A2%E5%8D%95%E5%AE%8C%E6%88%90%E5%8F%B3%E4%B8%89-DF24ddzf.png" alt="确认订单完成提示" />
+                  <img class="service-order-mask" data-service-reveal src="./assets/2.8%E5%BA%95%E9%83%A8%E9%81%AE%E7%BD%A9-BS8KVLxx.png" alt="" aria-hidden="true" />
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="levels" class="level-system-rebuild" aria-labelledby="level-system-title">
+            <div class="level-system-inner">
+              <header class="detail-page-heading level-system-hero" data-reveal>
+                <div class="detail-page-heading-main"><p>LEVEL SYSTEM / GROWTH &amp; GOVERNANCE</p><h2 id="level-system-title"><strong>双轨等级成长</strong>体系</h2></div>
+                <div class="reference-page-tags" aria-label="页面类型">
+                  <img src="./assets/youya-about-tag-2-dXfZ0eNd.png" alt="旅游服务平台活动/规则制定" />
+                  <img src="./assets/youya-about-tag-1-CkFjFh4n.png" alt="游鸭app端UI/UX设计" />
+                </div>
+              </header>
+              <p class="detail-page-lead level-system-page-lead" data-reveal>● 为平台本地人设计的双轨成长体系。升级需双达标，违规即降级，安全阈值触发权益冻结。</p>
+
+              <section class="level-system-block level-system-logic" aria-labelledby="level-logic-title">
+                <img id="level-logic-title" class="level-system-section-title" data-reveal src="./assets/01-%E6%A0%B8%E5%BF%83%E9%80%BB%E8%BE%91-Dt9CggZ8.png" alt="01 核心逻辑" />
+                <img class="level-system-wide-media" data-reveal src="./assets/1-%E6%A0%B8%E5%BF%83%E9%80%BB%E8%BE%91%E5%9B%BE%E7%89%87-B2H3bB7X.png" alt="经验值与行为分共同决定当前等级，未达标时暂缓或降级，低于安全阈值冻结权益" />
+              </section>
+
+              <section class="level-system-block level-system-comparison" aria-labelledby="level-comparison-title">
+                <img id="level-comparison-title" class="level-system-section-title" data-reveal src="./assets/02-%E7%94%A8%E6%88%B7%E7%8A%B6%E6%80%81%E5%AF%B9%E6%AF%94-DZg7X-Xe.png" alt="02 用户状态对比" />
+                <div class="level-comparison-pair" aria-label="用户状态对比">
+                  <img data-reveal src="./assets/%E7%94%A8%E6%88%B7%E7%8A%B6%E6%80%81-a-CpPk6AQx.png" alt="用户状态A：行为分低于安全阈值时曲折暂缓成长" />
+                  <img data-reveal src="./assets/%E7%94%A8%E6%88%B7%E7%8A%B6%E6%80%81-b-BP7zkq9o.png" alt="用户状态B：行为分与经验值达标时安全平稳升级" />
+                </div>
+              </section>
+
+              <section class="level-system-block level-system-feedback" aria-labelledby="level-feedback-title">
+                <img id="level-feedback-title" class="level-system-section-title" data-reveal src="./assets/03-%E7%AD%89%E7%BA%A7%E7%95%8C%E9%9D%A2%E5%8F%8D%E9%A6%88-nvp2dNbt.png" alt="03 等级界面反馈" />
+                <div class="level-feedback-grid">
+                  <figure data-reveal><img src="./assets/3-1%E7%AD%89%E7%BA%A7%E7%95%8C%E9%9D%A2%E5%8F%8D%E9%A6%88-CWEb_I1L.png" alt="等级页面反馈（部分）" /></figure>
+                  <figure data-reveal><img src="./assets/3-2%E4%BF%A1%E7%94%A8%E5%88%86%E6%98%8E%E7%BB%86-CpO3o_xx.png" alt="信用分明细页面" /></figure>
+                  <figure data-reveal><img src="./assets/3-3%E7%BB%8F%E9%AA%8C%E5%80%BC%E6%98%8E%E7%BB%86-Bx3VNDI9.png" alt="经验值明细页面" /></figure>
+                </div>
+              </section>
+            </div>
+
+            <footer class="level-system-overview" aria-labelledby="level-overview-title">
+              <img id="level-overview-title" class="level-system-overview-title level-system-section-title" data-reveal src="./assets/04-%E9%A1%B5%E9%9D%A2%E6%80%BB%E8%A7%88-jV15l8WE.png" alt="04 页面总览" />
+              <img class="level-system-overview-media" src="./assets/4-%E9%A1%B5%E9%9D%A2%E6%80%BB%E8%A7%88%E5%9B%BE-B7ujb3Zw.png" alt="Lv1 至 Lv6 等级页面总览" />
+            </footer>
+          </section>
+
+        </div>
+      </section>
+
+      <section class="shell section story-layout story-layout-single story-layout-secondary">
+        <div class="story-content">
+          <section id="pc" class="story-block" data-reveal>
+            <p class="kicker">04 / EARLY PC BACK OFFICE</p>
+            <h2 data-en="Early PC admin: service and governance">早期 PC 后台：服务与治理</h2>
+            <p data-en="These self-made early back-office screens support the same marketplace. They show the structure of service review, report resolution, and provider account management; the values shown are illustrative and are not claimed as live metrics.">这组自制早期后台方案服务于同一交易平台，展示服务审核、举报处理与本地人账号管理的结构；页面数值仅为示例，不作为线上指标主张。</p>
+            <div class="backend-showcase" data-backend-showcase>
+              <article class="backend-hero-slot">
+                <div class="backend-slot-copy"><span>01 / CORE WORKSPACE</span><h3>后台首页与核心工作台</h3><p>优先展示后台整体结构、核心导航和最重要的业务入口，帮助浏览者先理解系统全貌。</p></div>
+                <section class="backend-home-carousel" aria-label="后台首页图片轮播" data-backend-home>
+                  <div class="backend-home-controls"><button type="button" data-backend-home-prev aria-label="上一张后台首页图片">‹</button><span data-backend-home-status>01 / 06</span><button type="button" data-backend-home-next aria-label="下一张后台首页图片">›</button></div>
+                  <div class="backend-home-viewport"><div class="backend-home-track" data-backend-home-track>
+                    <button class="backend-home-slide is-active" type="button" data-lightbox="./assets/backend-home/Group%2096382.png" data-alt="后台首页：推荐申请用户审核"><img src="./assets/Group%2096382-Bx5pI20M.png" alt="后台首页：推荐申请用户审核" /></button>
+                    <button class="backend-home-slide" type="button" data-lightbox="./assets/backend-home/Group%2096429.png" data-alt="后台首页：攻略师申请详情"><img src="./assets/Group%2096429-BotxRdWu.png" alt="后台首页：攻略师申请详情" /></button>
+                    <button class="backend-home-slide" type="button" data-lightbox="./assets/backend-home/Frame%2096383.png" data-alt="后台首页：数据概览与用户趋势"><img src="./assets/Frame%2096383-DkO6LD4Y.png" alt="后台首页：数据概览与用户趋势" /></button>
+                    <button class="backend-home-slide" type="button" data-lightbox="./assets/backend-home/Group%2096385.png" data-alt="后台首页：瞬间数量数据看板"><img src="./assets/Group%2096385-CHXKyUEc.png" alt="后台首页：瞬间数量数据看板" /></button>
+                    <button class="backend-home-slide" type="button" data-lightbox="./assets/backend-home/Frame%2096424%20(1).png" data-alt="后台首页：热门话题数据看板"><img src="./assets/Frame%2096424%20(1)-DPG99Eaw.png" alt="后台首页：热门话题数据看板" /></button>
+                    <button class="backend-home-slide" type="button" data-lightbox="./assets/backend-home/Frame%2096428.png" data-alt="后台首页：资金流水与用户账户"><img src="./assets/Frame%2096428-D8YFDNDK.png" alt="后台首页：资金流水与用户账户" /></button>
+                  </div></div>
+                </section>
+              </article>
+              <section class="backend-carousel" aria-label="后台流程图片轮播" data-backend-carousel>
+                <div class="backend-carousel-head"><div><span>02 / PROCESS EVIDENCE</span><h3>后台流程与治理证据</h3></div></div>
+                <div class="backend-carousel-viewport"><div class="backend-carousel-controls"><button type="button" data-backend-prev aria-label="上一张">‹</button><button type="button" data-backend-next aria-label="下一张">›</button></div><div class="backend-carousel-track" data-backend-track>
+                  <article class="backend-slide is-active" data-backend-slide><div class="backend-placeholder"><button class="backend-evidence-image" type="button" data-lightbox="./assets/backend-home/%E6%95%B0%E6%8D%AE%E7%9B%91%E7%9D%A3.png" data-alt="举报处理后台：数据监督"><img src="./assets/%E6%95%B0%E6%8D%AE%E7%9B%91%E7%9D%A3-anH7jdim.png" alt="举报处理后台：数据监督" /></button></div><div class="backend-slide-copy"><span>PROCESS 01 / 治理风险</span><b>举报处理</b><p>把举报类型、风险原因、处理状态和处置结果集中到一个治理工作台。</p></div></article>
+                  <article class="backend-slide" data-backend-slide><div class="backend-placeholder"><button class="backend-evidence-image" type="button" data-lightbox="./assets/backend-home/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%20(1).png" data-alt="用户数据管理后台"><img src="./assets/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%20(1)-ByjIBnMD.png" alt="用户数据管理后台" /></button></div><div class="backend-slide-copy"><span>PROCESS 02 / 用户数据</span><b>用户数据管理</b><p>围绕用户状态、身份、注册信息与运营标签建立可追踪的数据视图。</p></div></article>
+                  <article class="backend-slide" data-backend-slide><div class="backend-placeholder"><button class="backend-evidence-image" type="button" data-lightbox="./assets/backend-home/Frame%2096486.png" data-alt="服务审核后台"><img src="./assets/Frame%2096486-DVliafaM.png" alt="服务审核后台" /></button></div><div class="backend-slide-copy"><span>PROCESS 03 / 服务治理</span><b>服务审核</b><p>通过服务内容、价格、时间与上下架状态，支撑服务质量和运营审核。</p></div></article>
+                  <article class="backend-slide" data-backend-slide><div class="backend-placeholder"><button class="backend-evidence-image" type="button" data-lightbox="./assets/backend-home/Frame%2096480%20(1).png" data-alt="帖子管理与攻略详情"><img src="./assets/Frame%2096480%20(1)-0NHL-H5r.png" alt="帖子管理与攻略详情" /></button></div><div class="backend-slide-copy"><span>PROCESS 04 / 内容管理</span><b>帖子管理</b><p>串联帖子列表、内容详情、用户信息和攻略数据，支持内容审核与运营判断。</p></div></article>
+                </div></div>
+                <div class="backend-carousel-footer"><span data-backend-status>01 / 04</span><span>点击查看大图</span></div>
+              </section>
+            </div>
+            <div class="boundary-note">边界说明：以上为自制早期 PC 后台方案与示例数据，用于说明运营结构，不表述为已上线的成熟后台或真实经营数据。</div>
+          </section>
+
+          <section id="ip-promo" class="story-block ip-factory-story" data-reveal>
+            <header id="ip-promo-title" class="ip-factory-heading"><div><p class="kicker">09 / CHARACTER ASSET FACTORY</p><h2><strong>IP形象</strong><span>设计</span></h2><p class="detail-page-lead ip-factory-lead">● 游小鸭是一只黄绿色的小鸭子，个子不高，矮墩墩的，长着一双豆豆眼，橙黄色的脚蹼和嘴巴与短短的身体搭配起来，显得格外老实本分。他是最爱外出探险的鸭子，戴着自制的荷叶帽，脸上总是挂着乐观开朗的表情。</p></div><img class="ip-factory-heading-tag" src="./assets/youya-about-tag-3-CWTaM6Sb.png" alt="IP及衍生品设计" /></header>
+             <section class="ip-asset-stage ip-character-stage" data-reveal><div class="ip-factory-label"><span>01</span><h3>角色基准</h3><p>三视图与角色比例</p></div><img class="ip-character-sheet" src="./assets/character-sheet-DjmN3d2m.png" alt="游小鸭角色三视图" /></section>
+             <section class="ip-asset-stage ip-flag-duck-stage" data-reveal><div class="ip-factory-label"><span>02</span><h3>挥旗小鸭</h3><p>三维角色与插画角色展示</p></div><div class="ip-flag-duck-grid"><img src="./assets/flag-duck-3d-C8_wTv2M.png" alt="挥旗小鸭三维角色" /><img src="./assets/flag-duck-illustration-UxNWn-c5.png" alt="挥旗小鸭插画角色" /></div></section>
+             <section class="ip-asset-stage" data-reveal><div class="ip-factory-label"><span>03</span><h3>基础动作与情绪</h3><p>5 张动作表情</p></div><div class="ip-asset-grid ip-action-grid"> <img src="./assets/action-1-CFyePq-g.png" alt="游小鸭动作表情1" /><img src="./assets/action-2-CIIkhRe1.png" alt="游小鸭动作表情2" /><img src="./assets/action-3-DskSpxK3.png" alt="游小鸭动作表情3" /><img src="./assets/action-4-CN1d1xVN.png" alt="游小鸭动作表情4" /><img src="./assets/action-5-CsCebPTW.png" alt="游小鸭动作表情5" /></div></section>
+             <section class="ip-asset-stage" data-reveal><div class="ip-factory-label"><span>03</span><h3>场景化融合表情包</h3><p>10 张大表情，按三组展台展示</p></div><div class="ip-large-booths"><div class="ip-large-booth"><b>01 / 旅行与交通</b><div><img src="./assets/large-1-BRTFNkpQ.png" alt="游鸭旅行插画" /><img src="./assets/large-2-DaMFc8ZG.png" alt="游鸭交通插画" /><img src="./assets/large-3-RFFyiGwZ.png" alt="游鸭交通插画" /><img src="./assets/large-4-CvSP85NP.png" alt="游鸭旅行插画" /></div></div><div class="ip-large-booth"><b>02 / 记录与观察</b><div><img src="./assets/large-5-DMdHvQwt.png" alt="游鸭记录插画" /><img src="./assets/large-6-wE_AzVD-.png" alt="游鸭观察插画" /><img src="./assets/large-7-Bjv3KPv0.png" alt="游鸭动作插画" /></div></div><div class="ip-large-booth"><b>03 / 反差与叙事</b><div><img src="./assets/large-8-BYzOuO9-.png" alt="游鸭反差插画" /><img src="./assets/large-9-BSyJ0JQK.png" alt="游鸭动作插画" /><img class="ip-large-wide" src="./assets/large-10-BTFHyrd8.png" alt="游鸭叙事插画" /></div></div></div></section>
+             <section class="ip-asset-stage ip-story-stage" data-reveal><div class="ip-factory-label"><span>04</span><h3>游鸭故事</h3><p>4 组日常分镜，保留原图文字与比例</p></div><div class="ip-story-asset-groups"><div><b>01 / 打工牛马</b><div class="ip-story-image-row"><img src="./assets/story-work-1-DnKKtMw6.png" alt="打工牛马挤地铁" /><img src="./assets/story-work-2-ZHJobGNu.png" alt="打工牛马上班" /><img src="./assets/story-work-3-Cl3GEUfr.png" alt="打工牛马吃饭" /><img src="./assets/story-work-4-B0Ht88xo.png" alt="打工牛马睡觉" /></div></div><div><b>02 / 帮倒忙</b><div class="ip-story-image-row"><img src="./assets/story-help-1-BaFrXZp9.png" alt="帮倒忙表情包" /><img src="./assets/story-help-2-U99TCHlz.png" alt="帮倒忙表情包" /><img src="./assets/story-help-3-BHfuagil.png" alt="帮倒忙表情包" /><img src="./assets/story-help-4-CZrxS9dK.png" alt="帮倒忙表情包" /></div></div><div><b>03 / 装大人上班</b><div class="ip-story-image-row"><img src="./assets/story-adult-1-EY7X6VA4.png" alt="装大人上班" /><img src="./assets/story-adult-2-D19w4sfj.png" alt="装大人上班" /><img src="./assets/story-adult-3-plcNxg2n.png" alt="装大人上班" /><img src="./assets/story-adult-4-CPDv5K_A.png" alt="装大人上班" /></div></div><div><b>04 / 疑惑日常</b><div class="ip-story-image-row"><img src="./assets/story-confused-1-BqgdE1z_.png" alt="疑惑表情包" /><img src="./assets/story-confused-2-DqFxDzo9.png" alt="疑惑表情包" /><img src="./assets/story-confused-3-DxTZ5K97.png" alt="疑惑表情包" /><img src="./assets/story-confused-4-BBmtAGDv.png" alt="疑惑表情包" /></div></div></div></section>
+             <section class="ip-asset-stage ip-travel-stage" data-reveal><div class="ip-factory-label"><span>05</span><h3>旅游传播内容</h3><p>38 张内容资产，按主题分组</p></div><div class="ip-travel-groups"><div><b>01 / 国庆旅游对比</b><div class="ip-travel-row"><img src="./assets/travel-national-1-WEluZLEG.png" alt="国庆旅游对比1" /><img src="./assets/travel-national-2-DuoNrtqe.png" alt="国庆旅游对比2" /><img src="./assets/travel-national-3-c2GABaAn.png" alt="国庆旅游对比3" /><img src="./assets/travel-national-4-DOV0HMU5.png" alt="国庆旅游对比4" /></div></div><div><b>02 / 天气与出走</b><div class="ip-travel-row"><img src="./assets/travel-weather-1-CcAVE7gy.png" alt="洱海旅行内容" /><img src="./assets/travel-weather-2-m9nZHw44.png" alt="出走内容" /><img src="./assets/travel-weather-3-GKIEXmZu.png" alt="哈尔滨旅行内容" /><img src="./assets/travel-weather-4-BD3mqztV.png" alt="云南旅行内容" /></div></div><div><b>03 / 旅游地谐音梗</b><div class="ip-travel-row"><img src="./assets/travel-city-1-DriNHhsM.png" alt="北京旅行字幕" /><img src="./assets/travel-city-2-eBY1Xie1.png" alt="川西旅行字幕" /><img src="./assets/travel-city-3-CUHOFXpk.png" alt="内蒙古旅行字幕" /><img src="./assets/travel-city-4-CO8Gy7KE.png" alt="上海旅行字幕" /><img src="./assets/travel-city-5-D1R7H_Ml.png" alt="江西旅行字幕" /><img src="./assets/travel-city-6-g12kciy-.png" alt="厦门旅行字幕" /><img src="./assets/travel-city-7-CYpdYtT5.png" alt="天津旅行字幕" /><img src="./assets/travel-city-8-6BDF6M5q.png" alt="西藏旅行字幕" /></div></div><div><b>04 / 朋友圈传播</b><div class="ip-moments-row"><img class="ip-moments-ui" src="./assets/moments-ui-CAeaOoIN.png" alt="朋友圈内容界面" /><img src="./assets/moments-2-DQ0nWAAW.png" alt="朋友圈内容2" /><img src="./assets/moments-3-CC6foNwN.png" alt="朋友圈内容3" /><img src="./assets/moments-4-2RGJHiWJ.png" alt="朋友圈内容4" /><img src="./assets/moments-5-B1BVFiHi.png" alt="朋友圈内容5" /></div></div></div></section>
+             <section class="ip-asset-stage ip-wallpaper-stage" data-reveal><div class="ip-factory-label"><span>06</span><h3>游鸭壁纸</h3><p>保留原始尺寸比例的壁纸归档</p></div><div class="ip-wallpaper-grid"><div class="ip-wallpaper-left"><img src="./assets/wall-left-1-DIet7hB_.png" alt="游鸭雪人壁纸" /><img src="./assets/wall-left-2-8Pr1s8Vs.png" alt="游鸭冬日壁纸" /></div><img src="./assets/wall-center-BcaCG8Xx.png" alt="游鸭草地壁纸" /><img src="./assets/wall-right-BI3HLDi1.png" alt="游鸭绿色插画壁纸" /></div></section>
+          </section>
+
+          <section id="popup-design" class="story-block popup-design-story" data-reveal>
+            <header class="popup-design-heading detail-page-heading detail-page-heading-light">
+              <div class="detail-page-heading-main"><p>10 / POPUP DESIGN · UI/UX DESIGN</p><h2><strong>弹窗</strong><span class="popup-design-title-rest">设计</span></h2></div>
+              <div class="reference-page-tags" aria-label="项目标签"><span>游鸭app端UI/UX设计</span><span>旅游服务平台活动设计</span></div>
+            </header>
+            <p class="popup-design-lead detail-page-lead detail-page-lead-light">● 红包、优惠券弹窗设计：视觉突出、动效自然，支持多主题样式变化。</p>
+            <div class="popup-feature-grid" aria-label="红包引流弹窗设计">
+              <figure class="popup-feature">
+                <img class="popup-feature-title" src="./assets/1.%E5%85%AD%E4%B8%80%E5%BC%95%E6%B5%81%E7%BA%A2%E5%8C%85-IrwtoMbT.png" alt="六一引流红包" />
+                <div class="popup-stage">
+                  <img class="popup-stage-bg" src="./assets/%E5%BC%B9%E7%AA%97%E8%A7%86%E9%A2%91%E8%83%8C%E6%99%AF-BZ9T6-wf.png" alt="" aria-hidden="true" />
+                  <img class="popup-stage-fallback" src="./assets/%E5%85%AD%E4%B8%80%E5%BC%95%E6%B5%81%E7%BA%A2%E5%8C%85%E9%9D%99%E6%80%81-%E6%96%B0-MHFNKhDR.png" alt="六一引流红包静态弹窗" />
+                  <img class="popup-stage-sequence" data-popup-sequence="left" src="./assets/0001-D-Y4wVxd.png" alt="六一引流红包动态演示" />
+                </div>
+              </figure>
+              <figure class="popup-feature">
+                <img class="popup-feature-title" src="./assets/2.%E9%9A%8F%E6%9C%BA%E5%BC%95%E6%B5%81%E7%BA%A2%E5%8C%85-BD3TFZbH.png" alt="随机引流红包" />
+                <div class="popup-stage">
+                  <img class="popup-stage-bg" src="./assets/%E5%BC%B9%E7%AA%97%E8%A7%86%E9%A2%91%E8%83%8C%E6%99%AF-BZ9T6-wf.png" alt="" aria-hidden="true" />
+                  <img class="popup-stage-fallback" src="./assets/%E9%9A%8F%E6%9C%BA%E5%BC%95%E6%B5%81%E7%BA%A2%E5%8C%85%E9%9D%99%E6%80%81-%E6%96%B0-DLElg_2n.png" alt="随机引流红包静态弹窗" />
+                  <img class="popup-stage-sequence" data-popup-sequence="right" src="./assets/0001-BsaeEAt0.png" alt="随机引流红包动态演示" />
+                </div>
+              </figure>
+            </div>
+            <h3 class="popup-more-title"><img src="./assets/5.%E6%9B%B4%E5%A4%9A%E5%BC%B9%E7%AA%97-D8EybHQN.png" alt="更多弹窗" /></h3>
+            <div class="popup-carousel" aria-label="更多弹窗展示">
+              <div class="popup-carousel-track">
+                <figure><img src="./assets/6.%E5%85%8D%E4%BD%A3%E5%8D%A1%E5%BC%B9%E7%AA%971-Yc7qMTjG.png" alt="免佣弹窗1" /></figure>
+                <figure><img src="./assets/7.%E5%85%8D%E4%BD%A3%E5%8D%A1%E5%BC%B9%E7%AA%972-C0lw_pbS.png" alt="免佣弹窗2" /></figure>
+                <figure><img src="./assets/8.%E5%85%8D%E4%BD%A3%E5%8D%A1%E5%BC%B9%E7%AA%973-9wWlWzOj.png" alt="免佣弹窗3" /></figure>
+                <figure><img src="./assets/9.%E4%B8%8B%E5%8D%95%E4%BC%98%E6%83%A0%E5%88%B8-Dlq9OrJ7.png" alt="用户下单福利弹窗" /></figure>
+                <figure><img src="./assets/10.%E7%BA%A2%E5%8C%85%E5%BC%B9%E7%AA%971-CfXBS5aA.png" alt="红包弹窗1" /></figure>
+                <figure><img src="./assets/11.%E7%BA%A2%E5%8C%85%E5%BC%B9%E7%AA%972-DEgHC8M-.png" alt="红包弹窗2" /></figure>
+              </div>
+            </div>
+          </section>
+
+          <section id="ai-visual-exploration" class="story-block ai-visual-exploration-placeholder" data-reveal>
+            <p class="kicker">11 / AI-ASSISTED VISUAL EXPLORATION</p>
+            <h2>AI辅助视觉探索</h2>
+             <p>用 AI 扩展视觉探索范围，再由设计判断收敛为可执行资产。</p>
+             <div class="ai-visual-archive"><section class="ai-archive-hero"><div><span>01 / IP FORM EXPLORATION</span><h3>角色形象探索</h3><p>基于角色特征与品牌约束，生成可比较的视觉方向。</p></div><img src="./assets/ip-character-BqnPHwDU.png" alt="AI生成IP形象探索" /></section><section class="ai-archive-scenes"><header><span>02 / SCENE EXPLORATION</span><h3>场景生成探索</h3><p>16 张场景资产，按日常、工作、旅行与季节环境展开。</p></header><div class="ai-scene-grid"><img src="./assets/scene-01-CxiQuv7n.png" alt="AI场景探索1" /><img src="./assets/scene-02-B9L-_8Bg.png" alt="AI场景探索2" /><img src="./assets/scene-03-D02g4VcJ.png" alt="AI场景探索3" /><img src="./assets/scene-04-nk1ukYSf.png" alt="AI场景探索4" /><img src="./assets/scene-05-BZ1T3Eh4.png" alt="AI场景探索5" /><img src="./assets/scene-06-InIwqOhf.png" alt="AI场景探索6" /><img src="./assets/scene-07-BR-X9o6B.png" alt="AI场景探索7" /><img src="./assets/scene-08-BklfElEb.png" alt="AI场景探索8" /><img src="./assets/scene-09-B6zlzlLo.png" alt="AI场景探索9" /><img src="./assets/scene-10-wb5mW_wE.png" alt="AI场景探索10" /><img src="./assets/scene-11-DZNbX6Tg.png" alt="AI场景探索11" /><img src="./assets/scene-12-D_9bXaWt.png" alt="AI场景探索12" /><img src="./assets/scene-13-D2WD-5ug.png" alt="AI场景探索13" /><img src="./assets/scene-14-BzZia-ue.png" alt="AI场景探索14" /><img src="./assets/scene-15-nXiSIszX.png" alt="AI场景探索15" /><img src="./assets/scene-16-Df6s7QMb.png" alt="AI场景探索16" /></div></section><section class="ai-archive-app"><img src="./assets/app-poster-CDawUWKT.png" alt="AI生成旅游App引导视觉" /><div><span>03 / PRODUCT TOUCHPOINT</span><h3>从形象到产品触点</h3><p>将角色视觉转化为旅游 App 的引导入口，验证资产的产品适配性。</p></div></section><section class="ai-archive-icons"><header><span>04 / ICON SYSTEM</span><h3>Icon 语义系统</h3><p>22 个 Icon 按参考图分为旅行场景与产品功能两类。</p></header><div class="ai-icon-groups"><div class="ai-icon-group ai-icon-group-travel"><div class="ai-icon-grid ai-icon-grid-travel"><img src="./assets/icon-01-CSWwlInZ.png" alt="AI Icon1" /><img src="./assets/icon-02-DYb7ApW3.png" alt="AI Icon2" /><img src="./assets/icon-03-D-lfPs6g.png" alt="AI Icon3" /><img src="./assets/icon-04-O_ans6HU.png" alt="AI Icon4" /><img src="./assets/icon-05-CuwYd7iw.png" alt="AI Icon5" /><img src="./assets/icon-06-GE5xMrQ0.png" alt="AI Icon6" /><img src="./assets/icon-07-CVcHHIUy.png" alt="AI Icon7" /><img src="./assets/icon-08-DcuGyzoD.png" alt="AI Icon8" /><img src="./assets/icon-09-BQvCrHxH.png" alt="AI Icon9" /><img src="./assets/icon-10-CUzDloWk.png" alt="AI Icon10" /></div></div><div class="ai-icon-group ai-icon-group-product"><div class="ai-icon-grid ai-icon-grid-product"><img src="./assets/icon-11-D_-zeEbg.png" alt="AI Icon11" /><img src="./assets/icon-12-D5gHg5me.png" alt="AI Icon12" /><img src="./assets/icon-13-DU2OGgZC.png" alt="AI Icon13" /><img src="./assets/icon-14-BQ5xdXZT.png" alt="AI Icon14" /><img src="./assets/icon-15-C_Y_s4_8.png" alt="AI Icon15" /><img src="./assets/icon-16-CEdhVFG9.png" alt="AI Icon16" /><img src="./assets/icon-17-CbDefMo5.png" alt="AI Icon17" /><img src="./assets/icon-18-CGoLv3yg.png" alt="AI Icon18" /><img src="./assets/icon-19-6HNmEvCS.png" alt="AI Icon19" /><img src="./assets/icon-20-DsxUOJlf.png" alt="AI Icon20" /><img src="./assets/icon-21-D1N6RZg5.png" alt="AI Icon21" /><img src="./assets/icon-22-DnjaZClN.png" alt="AI Icon22" /></div></div></div></section><section class="ai-archive-boundary"><span>05 / HUMAN DIRECTION</span><strong>AI 负责扩大探索范围，设计师负责选择、统一、验证与落地。</strong></section></div>
+          </section>
+
+          <section id="poster-promo" class="story-block poster-promo-story" data-reveal aria-labelledby="poster-promo-title">
+            <header class="poster-promo-heading">
+              <div><p class="kicker">POSTER PROMOTION / VISUAL SYSTEM</p><h2 id="poster-promo-title">IP视觉整合 App 推广图设计</h2><p class="detail-page-lead">以 IP 角色为核心，统一产品功能、旅行内容与品牌传播的视觉表达。</p></div>
+            </header>
+            <div class="poster-promo-groups">
+              <section class="poster-promo-group"><header><span>01</span><div><h3>产品功能推广</h3><p>简洁化、模板化</p></div></header><div class="poster-promo-rail" tabindex="0" aria-label="产品功能推广素材"><img src="./assets/1-1-DmPkZqCF.png" alt="产品功能推广 1" /><img src="./assets/1-2-C-rRH_KK.png" alt="产品功能推广 2" /><img src="./assets/1-3-PDa1AFRk.png" alt="产品功能推广 3" /><img src="./assets/1-4-C2ERo0BL.png" alt="产品功能推广 4" /><img src="./assets/1-5-i6NZzZzl.png" alt="产品功能推广 5" /><img src="./assets/2-1-Cx1tfoqh.png" alt="产品功能推广 6" /><img src="./assets/2-2-CRGspHfr.png" alt="产品功能推广 7" /><img src="./assets/2-3-D5aAiHgf.png" alt="产品功能推广 8" /><img src="./assets/2-4-C6p95PRc.png" alt="产品功能推广 9" /><img src="./assets/2-5-B2u950Sa.png" alt="产品功能推广 10" /><img src="./assets/2-6-Dul4rM-x.png" alt="产品功能推广 11" /></div></section>
+              <section class="poster-promo-group"><header><span>02</span><div><h3>场景化内容传播</h3><p>场景化、生动形象、风格化</p></div></header><div class="poster-promo-rail" tabindex="0" aria-label="场景化内容传播素材"><img src="./assets/3-1-BI5IhHgm.png" alt="场景化内容传播 1" /><img src="./assets/3-2-DExZZ0ME.png" alt="场景化内容传播 2" /><img src="./assets/3-3-ipWCDY6q.png" alt="场景化内容传播 3" /><img src="./assets/3-4-BagkvgfS.png" alt="场景化内容传播 4" /><img src="./assets/4-1-CvaKpMzw.png" alt="场景化内容传播 5" /><img src="./assets/4-2-zMYekmPA.png" alt="场景化内容传播 6" /><img src="./assets/4-3-CiGcnXyc.png" alt="场景化内容传播 7" /><img src="./assets/4-4-lMr8OKtJ.png" alt="场景化内容传播 8" /></div></section>
+              <section class="poster-promo-group"><header><span>03</span><div><h3>差异化系列</h3><p>差异化、精细化、独特风格</p></div></header><div class="poster-promo-rail" tabindex="0" aria-label="差异化系列素材"><img src="./assets/5-1-B4MVh_Vz.png" alt="差异化系列 1" /><img src="./assets/5-2-B7VxBNUS.png" alt="差异化系列 2" /><img src="./assets/5-3-DQwIlNwt.png" alt="差异化系列 3" /><img src="./assets/5-4-Cy_ATo3f.png" alt="差异化系列 4" /><img src="./assets/6-1-DJEbFl1g.png" alt="差异化系列 5" /><img src="./assets/6-2-Dp-iASRD.png" alt="差异化系列 6" /><img src="./assets/6-3-qgWj0Dpn.png" alt="差异化系列 7" /><img src="./assets/6-4-BmKFmNJv.png" alt="差异化系列 8" /><img src="./assets/7-1-BF8o24CU.png" alt="差异化系列 9" /><img src="./assets/7-2-DSe3_OVn.png" alt="差异化系列 10" /><img src="./assets/7-3-DQWF36Xb.png" alt="差异化系列 11" /><img src="./assets/7-4-D28LBkaq.png" alt="差异化系列 12" /><img src="./assets/8-1-CvxChX-o.png" alt="差异化系列 13" /><img src="./assets/8-2-h2fqxRiw.png" alt="差异化系列 14" /><img src="./assets/8-3-HD8TKFAc.png" alt="差异化系列 15" /><img src="./assets/8-4-4Lh9yepn.png" alt="差异化系列 16" /><img src="./assets/9-1-uB-6kSrx.png" alt="差异化系列 17" /><img src="./assets/9-2-pcqMltAz.png" alt="差异化系列 18" /><img src="./assets/9-3-Twr-r5Mt.png" alt="差异化系列 19" /><img src="./assets/9-4-93pEEcvf.png" alt="差异化系列 20" /></div></section>
+              <section class="poster-promo-group"><header><span>04</span><div><h3>服务流程与规则</h3><p>简约、构成感、系列化</p></div></header><div class="poster-promo-rail" tabindex="0" aria-label="服务流程与规则素材"><img src="./assets/10-1-DUhlwm8w.png" alt="服务流程与规则 1" /><img src="./assets/10-2-BvRHge_u.png" alt="服务流程与规则 2" /><img src="./assets/10-3-Dw5HO1n4.png" alt="服务流程与规则 3" /><img src="./assets/10-4-CRs_Gi-b.png" alt="服务流程与规则 4" /><img src="./assets/11-1-PPjd2SoC.png" alt="服务流程与规则 5" /><img src="./assets/11-2-CHY0baWd.png" alt="服务流程与规则 6" /><img src="./assets/11-3-CtO5H2ol.png" alt="服务流程与规则 7" /><img src="./assets/11-4-DMRXDAp1.png" alt="服务流程与规则 8" /><img src="./assets/11-5-Xq7sn6WX.png" alt="服务流程与规则 9" /></div></section>
+              <section class="poster-promo-group poster-promo-long"><header><span>05</span><div><h3>长图设计</h3><p>无缝长图设计</p></div></header><div class="poster-promo-rail" tabindex="0" aria-label="长图设计素材"><img src="./assets/long-01-DnCOzGBH.png" alt="游小鸭诞生记长图" /><img src="./assets/long-02-DfechmPH.png" alt="我的家乡有宝藏长图" /></div></section>
+            </div>
+          </section>
+
+          <section id="evidence" class="story-block" data-reveal>
+            <p class="kicker">05 / EVIDENCE AND AI OPPORTUNITY</p>
+            <h2 data-en="Evidence is separated from assumptions">证据与假设分开写</h2>
+            <div class="evidence-grid">
+              <article class="evidence-card"><strong>已确认</strong><p>核心功能上线，跨角色评审、测试包验证、异常流程测试、用户反馈迭代存在。</p></article>
+              <article class="evidence-card"><strong>待整理</strong><p>可公开记录截图、指标口径、统计周期、功能演示视频。</p></article>
+              <article class="evidence-card"><strong>AI 机会</strong><p>推荐助手需输出推荐理由、不推荐原因、置信提示和人工咨询兜底。</p></article>
+            </div>
+            <div class="boundary-note">不编造转化率、用户规模、节省时长或业务增长；未公开证据不作为入口展示。</div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="lightbox"><button class="icon-button" data-close type="button" aria-label="关闭大图">×</button><img src="./assets/youya-pc-service-detail-cY30Oq5W.png" alt="后台设计大图预览" /></dialog>
+
+    <aside class="youya-mascot" data-youya-mascot aria-label="游鸭互动助手">
+      <div class="youya-mascot-bubble" data-mascot-bubble role="status" aria-live="polite">嗨，欢迎查看我的项目！</div>
+      <button class="youya-mascot-button" data-mascot-trigger type="button" aria-label="和游鸭互动" aria-expanded="false">
+        <img src="./assets/youya-flag-assistant-C_EbkhLO.png" alt="挥旗的游鸭IP形象" draggable="false" />
+      </button>
+    </aside>
+
+    <footer>© 2026 李璐廷 · 游鸭 ZPJ 案例 · 原 Figma 未修改</footer>
+    <script src="./app.js?v=20260916-ai-solid-supporting-r12"></script>
+  </body>
+</html>
+
+
+
+
