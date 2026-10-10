@@ -358,23 +358,9 @@ initYouyaCaseNavigation();
 function syncAiDetailComposition() {
   document.querySelectorAll(".case-ai-detail-canvas").forEach((canvas) => {
     const supporting = canvas.querySelector(".case-ai-supporting");
-    const boundary = canvas.querySelector(".case-ai-supporting");
-    const solid = canvas.querySelector(".case-ai-bottom-solid");
-    if (!supporting || !solid) return;
-    const canvasRect = canvas.getBoundingClientRect();
-    const supportingRect = supporting.getBoundingClientRect();
-    const needsSideFill = supportingRect.width < canvasRect.width - 1;
-    canvas.classList.toggle("needs-side-fill", needsSideFill);
-    if (canvasRect.height > 0) {
-      const anchor = boundary?.getBoundingClientRect();
-      const anchorBottom = anchor?.bottom ?? supportingRect.bottom;
-      const topPercent = Math.max(0, Math.min(100, ((anchorBottom - canvasRect.top) / canvasRect.height) * 100));
-      canvas.style.setProperty("--ai-solid-top", `${topPercent}%`);
-      if (anchor) {
-        canvas.style.setProperty("--ai-solid-left", `${((anchor.left - canvasRect.left) / canvasRect.width) * 100}%`);
-        canvas.style.setProperty("--ai-solid-width", `${(anchor.width / canvasRect.width) * 100}%`);
-      }
-    }
+    if (!supporting) return;
+    canvas.classList.toggle("needs-side-fill", supporting.offsetWidth < canvas.offsetWidth - 1);
+
   });
 }
 syncAiDetailComposition();
