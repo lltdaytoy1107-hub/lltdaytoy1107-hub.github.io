@@ -851,7 +851,8 @@ window.addEventListener("resize", requestAboutDirectoryUpdate);
 updateLevelDemo();
 updateProgress();
 updateScrollStories();
-updateAboutDirectoryScene();`r`nfunction initPosterPromoRails() {
+updateAboutDirectoryScene();
+function initPosterPromoRails() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   document.querySelectorAll(".poster-promo-rail").forEach((rail) => {
     if (rail.dataset.posterRailReady) return;
