@@ -1,0 +1,30 @@
+/* Continuous case navigation: shared with the resume return treatment. */
+body:is(.theme-youya, .theme-zaowuyun) .case-next-link {
+  display:flex; box-sizing:border-box; width:min(calc(100% - 48px),1180px);
+  min-height:clamp(72px,9vw,120px); margin:0 auto 28px;
+  padding:16px clamp(20px,3vw,36px); align-items:center; justify-content:space-between; gap:24px;
+  border:1px solid var(--line); border-radius:999px; color:var(--text,#f4f7fb); background:transparent;
+  text-decoration:none; transform-origin:center;
+  transition:transform .45s cubic-bezier(.22,.8,.2,1),background-color .45s ease,color .45s ease,border-color .45s ease;
+}
+.case-next-link span { font:800 clamp(18px,2.2vw,32px)/1.2 Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif; letter-spacing:-.03em; }
+.case-next-link strong { flex-shrink:0; font-size:clamp(14px,1.5vw,20px); letter-spacing:-.03em; }
+.case-next-link b { color:var(--accent); font-weight:400; }
+body:is(.theme-youya, .theme-zaowuyun) .case-next-link:focus-visible { outline:2px solid var(--accent); outline-offset:5px; }
+@media (hover:hover) and (pointer:fine) {
+  body:is(.theme-youya, .theme-zaowuyun) .case-next-link:hover { transform:scale(1.025); background:var(--accent); border-color:var(--accent); color:#080a0f; }
+  .case-next-link:hover b { color:#080a0f; }
+}
+@media (max-width:760px) {
+  body:is(.theme-youya, .theme-zaowuyun) .case-next-link { width:calc(100% - 24px); min-height:64px; margin-bottom:18px; padding:14px 20px; gap:12px; }
+  .case-next-link span { font-size:clamp(16px,4.6vw,20px); }
+  .case-next-link strong { font-size:14px; }
+}
+@media (max-width:360px) {
+  body:is(.theme-youya, .theme-zaowuyun) .case-next-link { padding-inline:16px; }
+  .case-next-link strong { font-size:12px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  body:is(.theme-youya, .theme-zaowuyun) .case-next-link { transition:none; }
+  body:is(.theme-youya, .theme-zaowuyun) .case-next-link:hover { transform:none; }
+}
